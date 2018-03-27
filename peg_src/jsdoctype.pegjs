@@ -6,6 +6,7 @@
   var OptionalTypeSyntax = meta.OptionalTypeSyntax;
   var NullableTypeSyntax = meta.NullableTypeSyntax;
   var NotNullableTypeSyntax = meta.NotNullableTypeSyntax;
+  var IntersectionTypeSyntax = meta.IntersectionTypeSyntax;
   var NodeType = require('../lib/node-type.js');
 
   var NamepathOperatorType = {
@@ -23,6 +24,7 @@
 
 
 TopLevel = _ expr:( VariadicTypeExpr
+                  / IntersectionTypeExpr
                   / UnionTypeExpr
                   / UnaryUnionTypeExpr
                   / ArrayTypeExpr
@@ -31,6 +33,8 @@ TopLevel = _ expr:( VariadicTypeExpr
                   / FunctionTypeExpr
                   / BroadNamepathExpr
                   / ParenthesizedExpr
+                  / DecoratedTupleTypes
+                  / TupleTypeExpr
                   / ValueExpr
                   / AnyTypeExpr
                   / UnknownTypeExpr
@@ -361,6 +365,23 @@ UnionTypeExpr = left:UnionTypeExprOperand _ syntax:UnionTypeOperator _ right:(Un
                 };
               }
 
+/*
+ * Intersection type expressions.
+ *
+ * Examples:
+ *   - number&undefined
+ *   - Foo&Bar&Baz
+ */
+IntersectionTypeExpr = left:IntersectionTypeExprOperand _ "&" _ right:(IntersectionTypeExpr / IntersectionTypeExprOperand) {
+                return {
+                    type: NodeType.INTERSECTION,
+                    left: left,
+                    right: right,
+                    meta: { syntax: "AND" },
+                };
+              }
+
+
 // https://github.com/senchalabs/jsduck/wiki/Type-Definitions#type-names
 UnionTypeOperator = UnionTypeOperatorClosureLibraryFlavored
                   / UnionTypeOperatorJSDuckFlavored
@@ -374,6 +395,26 @@ UnionTypeOperatorClosureLibraryFlavored = "|" {
 UnionTypeOperatorJSDuckFlavored = "/" {
                                   return UnionTypeSyntax.SLASH;
                                 }
+
+
+IntersectionTypeExprOperand = UnaryIntersectionTypeExpr
+                     / RecordTypeExpr
+                     / FunctionTypeExpr
+                     / ParenthesizedExpr
+                     / GenericTypeExpr
+                     / ArrayTypeExpr
+                     / BroadNamepathExpr
+
+UnaryIntersectionTypeExpr = SuffixUnaryIntersectionTypeExpr
+                   / PrefixUnaryIntersectionTypeExpr
+
+
+PrefixUnaryIntersectionTypeExpr = PrefixOptionalTypeExpr
+                         / PrefixNotNullableTypeExpr
+
+SuffixUnaryIntersectionTypeExpr = SuffixOptionalTypeExpr
+                         / SuffixNotNullableTypeExpr
+
 
 
 UnionTypeExprOperand = UnaryUnionTypeExpr
@@ -460,7 +501,6 @@ PrefixOptionalTypeExpr = operator:"=" _ operand:PrefixUnaryUnionTypeExprOperand 
                            meta: { syntax: OptionalTypeSyntax.PREFIX_EQUALS_SIGN },
                          };
                        }
-
 
 
 SuffixUnaryUnionTypeExpr = SuffixOptionalTypeExpr
@@ -632,6 +672,60 @@ ArrayTypeExpr = operand:ArrayTypeExprOperand brackets:(_ "[" _ "]")+ {
                   };
                 }, operand);
               }
+
+TupleTypeExpr = "[" _ head:UnionTypeExprOperand tail:( _ "," _ UnionTypeExprOperand )* _ "]" {
+                return {
+                    type: NodeType.TUPLE,
+                    types: [ head, ...tail.map( e => e[ 3 ] ) ]
+                };
+
+}
+
+SuffixOptionalTupleTypeExpr = operand:TupleTypeExpr _ operator:"=" {
+                         return {
+                           type: NodeType.OPTIONAL,
+                           value: operand,
+                           meta: { syntax: OptionalTypeSyntax.SUFFIX_EQUALS_SIGN },
+                         };
+                       }
+
+/*
+ * Prefix nullable type expressions.
+ *
+ * Examples:
+ *   - ?string
+ *
+ * Spec:
+ *   - https://developers.google.com/closure/compiler/docs/js-for-compiler#types
+ */
+PrefixNullableTupleTypeExpr = operator:"?" _ operand:TupleTypeExpr {
+                         return {
+                           type: NodeType.NULLABLE,
+                           value: operand,
+                           meta: { syntax: NullableTypeSyntax.PREFIX_QUESTION_MARK },
+                         };
+                       }
+
+
+
+/*
+ * Prefix not nullable type expressions.
+ *
+ * Examples:
+ *   - !Object
+ *
+ * Spec:
+ *   - https://developers.google.com/closure/compiler/docs/js-for-compiler#types
+ */
+PrefixNotNullableTupleTypeExpr = operator:"!" _ operand:TupleTypeExpr {
+                            return {
+                              type: NodeType.NOT_NULLABLE,
+                              value: operand,
+                              meta: { syntax: NotNullableTypeSyntax.PREFIX_BANG },
+                            };
+                          }
+
+DecoratedTupleTypes = SuffixOptionalTupleTypeExpr / PrefixNullableTupleTypeExpr / PrefixNotNullableTupleTypeExpr
 
 
 ArrayTypeExprOperand = UnaryUnionTypeExpr

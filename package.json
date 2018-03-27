@@ -19,12 +19,12 @@
   "scripts": {
     "prepublish": "npm-run-all build",
     "pretest1": "npm-run-all lint build",
-    "test": "mocha tests",
-    "lint": "eslint lib tests",
+    "test": "mocha test",
+    "lint": "eslint lib test",
     "clean": "rimraf ./peg_lib",
     "postclean": "mkdirp ./peg_lib",
     "prebuild": "npm-run-all clean",
-    "build": "pegjs --cache ./peg_src/jsdoctype.pegjs ./peg_lib/jsdoctype.js"
+    "build": "pegjs --cache -o ./peg_lib/jsdoctype.js ./peg_src/jsdoctype.pegjs"
   },
   "readmeFilename": "README.md",
   "devDependencies": {

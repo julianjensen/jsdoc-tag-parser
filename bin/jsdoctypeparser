@@ -43,7 +43,7 @@ if ( !program.args.length ) program.help();
  */
 async function process_file( fileName )
 {
-    console.log( `Processing file: "${fileName}"` );
+    // console.log( `Processing file: "${fileName}"` );
 
     defaultOptions.sourceType = program.script ? 'script' : 'module';
 
