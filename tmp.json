@@ -1,0 +1,1521 @@
+{
+    "fileName": "lib/parse-file.js",
+    "types": [],
+    "allDocNodes": [
+        {
+            "type": "Program",
+            "index": 0,
+            "name": "lib/parse-file.js",
+            "leading": [
+                {
+                    "comment": {
+                        "type": "Block",
+                        "value": "* ******************************************************************************************************************\n * @file Parse JsDoc comment and add whatever is needed from the attached AST node.\n * @author Julian Jensen <jjdanois@gmail.com>\n * @since 1.0.0\n * @date 25-Mar-2018\n ********************************************************************************************************************",
+                        "start": 0,
+                        "end": 405,
+                        "range": {
+                            "0": 0,
+                            "1": 405
+                        },
+                        "loc": {
+                            "start": {
+                                "line": 1,
+                                "column": 0
+                            },
+                            "end": {
+                                "line": 6,
+                                "column": 119
+                            }
+                        },
+                        "extendedRange": [
+                            0,
+                            406
+                        ]
+                    },
+                    "tags": {
+                        "description": "",
+                        "tags": [
+                            {
+                                "title": "file",
+                                "description": "Parse JsDoc comment and add whatever is needed from the attached AST node.",
+                                "lineNumber": 0,
+                                "range": [
+                                    0,
+                                    80
+                                ]
+                            },
+                            {
+                                "title": "author",
+                                "description": "Julian Jensen <jjdanois@gmail.com>",
+                                "lineNumber": 1,
+                                "range": [
+                                    81,
+                                    123
+                                ]
+                            },
+                            {
+                                "title": "since",
+                                "description": "1.0.0",
+                                "lineNumber": 2,
+                                "range": [
+                                    124,
+                                    136
+                                ]
+                            },
+                            {
+                                "title": "date",
+                                "description": "25-Mar-2018",
+                                "lineNumber": 3,
+                                "range": [
+                                    137,
+                                    154
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "FunctionDeclaration",
+            "index": 86,
+            "name": "parse",
+            "leading": [
+                {
+                    "comment": {
+                        "type": "Block",
+                        "value": "*\n * @typedef {object} CommentBlock\n * @property {Comment} comment\n * @property {Annotation} tags\n ",
+                        "start": 1482,
+                        "end": 1585,
+                        "range": {
+                            "0": 1482,
+                            "1": 1585
+                        },
+                        "loc": {
+                            "start": {
+                                "line": 30,
+                                "column": 0
+                            },
+                            "end": {
+                                "line": 34,
+                                "column": 3
+                            }
+                        },
+                        "extendedRange": [
+                            1267,
+                            1921
+                        ]
+                    },
+                    "tags": {
+                        "description": "",
+                        "tags": [
+                            {
+                                "title": "typedef",
+                                "description": null,
+                                "lineNumber": 0,
+                                "range": [
+                                    0,
+                                    30
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "object",
+                                    "range": [
+                                        10,
+                                        16
+                                    ]
+                                },
+                                "name": "CommentBlock"
+                            },
+                            {
+                                "title": "property",
+                                "description": null,
+                                "lineNumber": 1,
+                                "range": [
+                                    31,
+                                    58
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "Comment",
+                                    "range": [
+                                        42,
+                                        49
+                                    ]
+                                },
+                                "name": "comment"
+                            },
+                            {
+                                "title": "property",
+                                "description": null,
+                                "lineNumber": 2,
+                                "range": [
+                                    59,
+                                    86
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "Annotation",
+                                    "range": [
+                                        70,
+                                        80
+                                    ]
+                                },
+                                "name": "tags"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "comment": {
+                        "type": "Block",
+                        "value": "*\n * @typedef {object} Comments\n * @property {number} index\n * @property {string} type\n * @property {Array<CommentBlock>} [leading]\n * @property {Array<CommentBlock>} [trailing]\n ",
+                        "start": 1587,
+                        "end": 1770,
+                        "range": {
+                            "0": 1587,
+                            "1": 1770
+                        },
+                        "loc": {
+                            "start": {
+                                "line": 36,
+                                "column": 0
+                            },
+                            "end": {
+                                "line": 42,
+                                "column": 3
+                            }
+                        },
+                        "extendedRange": [
+                            1267,
+                            1921
+                        ]
+                    },
+                    "tags": {
+                        "description": "",
+                        "tags": [
+                            {
+                                "title": "typedef",
+                                "description": null,
+                                "lineNumber": 0,
+                                "range": [
+                                    0,
+                                    26
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "object",
+                                    "range": [
+                                        10,
+                                        16
+                                    ]
+                                },
+                                "name": "Comments"
+                            },
+                            {
+                                "title": "property",
+                                "description": null,
+                                "lineNumber": 1,
+                                "range": [
+                                    27,
+                                    51
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "number",
+                                    "range": [
+                                        38,
+                                        44
+                                    ]
+                                },
+                                "name": "index"
+                            },
+                            {
+                                "title": "property",
+                                "description": null,
+                                "lineNumber": 2,
+                                "range": [
+                                    52,
+                                    75
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "string",
+                                    "range": [
+                                        63,
+                                        69
+                                    ]
+                                },
+                                "name": "type"
+                            },
+                            {
+                                "title": "property",
+                                "description": null,
+                                "lineNumber": 3,
+                                "range": [
+                                    76,
+                                    116
+                                ],
+                                "type": {
+                                    "type": "OPTIONAL",
+                                    "value": {
+                                        "type": "GENERIC",
+                                        "subject": {
+                                            "type": "NAME",
+                                            "name": "Array"
+                                        },
+                                        "objects": [
+                                            {
+                                                "type": "NAME",
+                                                "name": "CommentBlock"
+                                            }
+                                        ],
+                                        "meta": {
+                                            "syntax": "ANGLE_BRACKET"
+                                        }
+                                    },
+                                    "meta": {
+                                        "syntax": "SQUARE_BRACKET"
+                                    }
+                                },
+                                "name": "leading"
+                            },
+                            {
+                                "title": "property",
+                                "description": null,
+                                "lineNumber": 4,
+                                "range": [
+                                    117,
+                                    158
+                                ],
+                                "type": {
+                                    "type": "OPTIONAL",
+                                    "value": {
+                                        "type": "GENERIC",
+                                        "subject": {
+                                            "type": "NAME",
+                                            "name": "Array"
+                                        },
+                                        "objects": [
+                                            {
+                                                "type": "NAME",
+                                                "name": "CommentBlock"
+                                            }
+                                        ],
+                                        "meta": {
+                                            "syntax": "ANGLE_BRACKET"
+                                        }
+                                    },
+                                    "meta": {
+                                        "syntax": "SQUARE_BRACKET"
+                                    }
+                                },
+                                "name": "trailing"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "comment": {
+                        "type": "Block",
+                        "value": "*\n * @param {string} source       - The source module\n * @param {object} [_options]    - The usual espree/esprima options\n * @return {Program}\n ",
+                        "start": 1772,
+                        "end": 1920,
+                        "range": {
+                            "0": 1772,
+                            "1": 1920
+                        },
+                        "loc": {
+                            "start": {
+                                "line": 44,
+                                "column": 0
+                            },
+                            "end": {
+                                "line": 48,
+                                "column": 3
+                            }
+                        },
+                        "extendedRange": [
+                            1267,
+                            1921
+                        ]
+                    },
+                    "tags": {
+                        "description": "",
+                        "tags": [
+                            {
+                                "title": "param",
+                                "description": "The source module",
+                                "lineNumber": 0,
+                                "range": [
+                                    0,
+                                    48
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "string",
+                                    "range": [
+                                        8,
+                                        14
+                                    ]
+                                },
+                                "name": "source"
+                            },
+                            {
+                                "title": "param",
+                                "description": "The usual espree/esprima options",
+                                "lineNumber": 1,
+                                "range": [
+                                    49,
+                                    112
+                                ],
+                                "type": {
+                                    "type": "OPTIONAL",
+                                    "value": {
+                                        "type": "NAME",
+                                        "name": "object"
+                                    },
+                                    "meta": {
+                                        "syntax": "SQUARE_BRACKET"
+                                    }
+                                },
+                                "name": "_options"
+                            },
+                            {
+                                "title": "return",
+                                "description": null,
+                                "lineNumber": 2,
+                                "range": [
+                                    113,
+                                    130
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "Program",
+                                    "range": [
+                                        122,
+                                        129
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "FunctionDeclaration",
+            "index": 193,
+            "name": "prep",
+            "leading": [
+                {
+                    "comment": {
+                        "type": "Block",
+                        "value": "*\n * @param {Program} withComments\n * @param {string} file\n * @return {object}\n ",
+                        "start": 2718,
+                        "end": 2802,
+                        "range": {
+                            "0": 2718,
+                            "1": 2802
+                        },
+                        "loc": {
+                            "start": {
+                                "line": 77,
+                                "column": 0
+                            },
+                            "end": {
+                                "line": 81,
+                                "column": 3
+                            }
+                        },
+                        "extendedRange": [
+                            2716,
+                            2803
+                        ]
+                    },
+                    "tags": {
+                        "description": "",
+                        "tags": [
+                            {
+                                "title": "param",
+                                "description": null,
+                                "lineNumber": 0,
+                                "range": [
+                                    0,
+                                    29
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "Program",
+                                    "range": [
+                                        8,
+                                        15
+                                    ]
+                                },
+                                "name": "withComments"
+                            },
+                            {
+                                "title": "param",
+                                "description": null,
+                                "lineNumber": 1,
+                                "range": [
+                                    30,
+                                    50
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "string",
+                                    "range": [
+                                        38,
+                                        44
+                                    ]
+                                },
+                                "name": "file"
+                            },
+                            {
+                                "title": "return",
+                                "description": null,
+                                "lineNumber": 2,
+                                "range": [
+                                    51,
+                                    67
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "object",
+                                    "range": [
+                                        60,
+                                        66
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "FunctionDeclaration",
+            "index": 381,
+            "name": "determine_field",
+            "leading": [
+                {
+                    "comment": {
+                        "type": "Block",
+                        "value": "*\n * @param {Node & Object} node\n * @param parent\n * @return {*[]}\n ",
+                        "start": 4513,
+                        "end": 4585,
+                        "range": {
+                            "0": 4513,
+                            "1": 4585
+                        },
+                        "loc": {
+                            "start": {
+                                "line": 146,
+                                "column": 0
+                            },
+                            "end": {
+                                "line": 150,
+                                "column": 3
+                            }
+                        },
+                        "extendedRange": [
+                            4511,
+                            4586
+                        ]
+                    },
+                    "tags": {
+                        "description": "",
+                        "tags": [
+                            {
+                                "title": "param",
+                                "description": null,
+                                "lineNumber": 0,
+                                "range": [
+                                    0,
+                                    27
+                                ],
+                                "type": {
+                                    "type": "INTERSECTION",
+                                    "range": [
+                                        8,
+                                        21
+                                    ],
+                                    "left": {
+                                        "type": "NAME",
+                                        "name": "Node"
+                                    },
+                                    "right": {
+                                        "type": "NAME",
+                                        "name": "Object"
+                                    },
+                                    "meta": {
+                                        "syntax": "AND"
+                                    }
+                                },
+                                "name": "node"
+                            },
+                            {
+                                "title": "param",
+                                "description": null,
+                                "lineNumber": 1,
+                                "range": [
+                                    28,
+                                    41
+                                ],
+                                "type": null,
+                                "name": "parent"
+                            },
+                            {
+                                "title": "return",
+                                "description": null,
+                                "lineNumber": 2,
+                                "range": [
+                                    42,
+                                    55
+                                ],
+                                "type": {
+                                    "type": "GENERIC",
+                                    "range": [
+                                        51,
+                                        54
+                                    ],
+                                    "subject": {
+                                        "type": "NAME",
+                                        "name": "Array"
+                                    },
+                                    "objects": [
+                                        {
+                                            "type": "ANY"
+                                        }
+                                    ],
+                                    "meta": {
+                                        "syntax": "SQUARE_BRACKET"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "FunctionDeclaration",
+            "index": 451,
+            "name": "prep_string",
+            "leading": [
+                {
+                    "comment": {
+                        "type": "Block",
+                        "value": "*\n * Takes a block comment, cleans it up, and returns the output from `doctrine`.\n *\n * @param {string} str\n * @return {{description, tags}}\n ",
+                        "start": 5081,
+                        "end": 5227,
+                        "range": {
+                            "0": 5081,
+                            "1": 5227
+                        },
+                        "loc": {
+                            "start": {
+                                "line": 178,
+                                "column": 0
+                            },
+                            "end": {
+                                "line": 183,
+                                "column": 3
+                            }
+                        },
+                        "extendedRange": [
+                            5078,
+                            5228
+                        ]
+                    },
+                    "tags": {
+                        "description": "Takes a block comment, cleans it up, and returns the output from `doctrine`.",
+                        "tags": [
+                            {
+                                "title": "param",
+                                "description": null,
+                                "lineNumber": 1,
+                                "range": [
+                                    77,
+                                    96
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "string",
+                                    "range": [
+                                        85,
+                                        91
+                                    ]
+                                },
+                                "name": "str"
+                            },
+                            {
+                                "title": "return",
+                                "description": null,
+                                "lineNumber": 2,
+                                "range": [
+                                    97,
+                                    126
+                                ],
+                                "type": {
+                                    "type": "RECORD",
+                                    "range": [
+                                        106,
+                                        125
+                                    ],
+                                    "entries": [
+                                        {
+                                            "type": "RECORD_ENTRY",
+                                            "key": "description",
+                                            "value": null
+                                        },
+                                        {
+                                            "type": "RECORD_ENTRY",
+                                            "key": "tags",
+                                            "value": null
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "FunctionDeclaration",
+            "index": 708,
+            "name": "fix_array",
+            "leading": [
+                {
+                    "comment": {
+                        "type": "Block",
+                        "value": "*\n * @param {string} str\n * @return {string}\n ",
+                        "start": 6761,
+                        "end": 6811,
+                        "range": {
+                            "0": 6761,
+                            "1": 6811
+                        },
+                        "loc": {
+                            "start": {
+                                "line": 224,
+                                "column": 0
+                            },
+                            "end": {
+                                "line": 227,
+                                "column": 3
+                            }
+                        },
+                        "extendedRange": [
+                            6759,
+                            6812
+                        ]
+                    },
+                    "tags": {
+                        "description": "",
+                        "tags": [
+                            {
+                                "title": "param",
+                                "description": null,
+                                "lineNumber": 0,
+                                "range": [
+                                    0,
+                                    19
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "string",
+                                    "range": [
+                                        8,
+                                        14
+                                    ]
+                                },
+                                "name": "str"
+                            },
+                            {
+                                "title": "return",
+                                "description": null,
+                                "lineNumber": 1,
+                                "range": [
+                                    20,
+                                    36
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "string",
+                                    "range": [
+                                        29,
+                                        35
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "FunctionDeclaration",
+            "index": 842,
+            "name": "parse_comments",
+            "leading": [
+                {
+                    "comment": {
+                        "type": "Block",
+                        "value": "*\n * Parse all leading and trailing comments for a given node, if it has any and returns an array\n * of all tags found.\n *\n * @param {BaseNode} node\n * @return {?Comments}\n ",
+                        "start": 7497,
+                        "end": 7674,
+                        "range": {
+                            "0": 7497,
+                            "1": 7674
+                        },
+                        "loc": {
+                            "start": {
+                                "line": 254,
+                                "column": 0
+                            },
+                            "end": {
+                                "line": 260,
+                                "column": 3
+                            }
+                        },
+                        "extendedRange": [
+                            7495,
+                            7675
+                        ]
+                    },
+                    "tags": {
+                        "description": "Parse all leading and trailing comments for a given node, if it has any and returns an array\nof all tags found.",
+                        "tags": [
+                            {
+                                "title": "param",
+                                "description": null,
+                                "lineNumber": 2,
+                                "range": [
+                                    112,
+                                    134
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "BaseNode",
+                                    "range": [
+                                        120,
+                                        128
+                                    ]
+                                },
+                                "name": "node"
+                            },
+                            {
+                                "title": "return",
+                                "description": null,
+                                "lineNumber": 3,
+                                "range": [
+                                    135,
+                                    154
+                                ],
+                                "type": {
+                                    "type": "NULLABLE",
+                                    "range": [
+                                        144,
+                                        153
+                                    ],
+                                    "value": {
+                                        "type": "NAME",
+                                        "name": "Comments"
+                                    },
+                                    "meta": {
+                                        "syntax": "PREFIX_QUESTION_MARK"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "VariableDeclarator",
+            "index": 854,
+            "name": "tc",
+            "leading": [
+                {
+                    "comment": {
+                        "type": "Block",
+                        "value": " parse trailing ",
+                        "start": 7918,
+                        "end": 7938,
+                        "range": {
+                            "0": 7918,
+                            "1": 7938
+                        },
+                        "loc": {
+                            "start": {
+                                "line": 267,
+                                "column": 8
+                            },
+                            "end": {
+                                "line": 267,
+                                "column": 28
+                            }
+                        },
+                        "extendedRange": [
+                            7909,
+                            7947
+                        ]
+                    },
+                    "tags": {
+                        "description": "{______________23}",
+                        "tags": []
+                    }
+                }
+            ]
+        },
+        {
+            "type": "VariableDeclarator",
+            "index": 861,
+            "name": "cb",
+            "leading": [
+                {
+                    "comment": {
+                        "type": "Block",
+                        "value": "* @type {Comments} ",
+                        "start": 8006,
+                        "end": 8029,
+                        "range": {
+                            "0": 8006,
+                            "1": 8029
+                        },
+                        "loc": {
+                            "start": {
+                                "line": 269,
+                                "column": 8
+                            },
+                            "end": {
+                                "line": 269,
+                                "column": 31
+                            }
+                        },
+                        "extendedRange": [
+                            7997,
+                            8038
+                        ]
+                    },
+                    "tags": {
+                        "description": "",
+                        "tags": [
+                            {
+                                "title": "type",
+                                "description": null,
+                                "lineNumber": 0,
+                                "range": [
+                                    0,
+                                    16
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "Comments",
+                                    "range": [
+                                        7,
+                                        15
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "FunctionDeclaration",
+            "index": 917,
+            "name": "replace_types",
+            "leading": [
+                {
+                    "comment": {
+                        "type": "Block",
+                        "value": "*\n * @param {string} str\n * @return {string}\n ",
+                        "start": 8320,
+                        "end": 8370,
+                        "range": {
+                            "0": 8320,
+                            "1": 8370
+                        },
+                        "loc": {
+                            "start": {
+                                "line": 286,
+                                "column": 0
+                            },
+                            "end": {
+                                "line": 289,
+                                "column": 3
+                            }
+                        },
+                        "extendedRange": [
+                            8318,
+                            8371
+                        ]
+                    },
+                    "tags": {
+                        "description": "",
+                        "tags": [
+                            {
+                                "title": "param",
+                                "description": null,
+                                "lineNumber": 0,
+                                "range": [
+                                    0,
+                                    19
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "string",
+                                    "range": [
+                                        8,
+                                        14
+                                    ]
+                                },
+                                "name": "str"
+                            },
+                            {
+                                "title": "return",
+                                "description": null,
+                                "lineNumber": 1,
+                                "range": [
+                                    20,
+                                    36
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "string",
+                                    "range": [
+                                        29,
+                                        35
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "FunctionDeclaration",
+            "index": 1038,
+            "name": "parse_comment_array",
+            "leading": [
+                {
+                    "comment": {
+                        "type": "Block",
+                        "value": "*\n * Parse an array of comments, if it has any, and returns an array of all tags found.\n *\n * @param {Array<Comment>} comments\n * @return {?Array<CommentBlock>}\n ",
+                        "start": 9200,
+                        "end": 9366,
+                        "range": {
+                            "0": 9200,
+                            "1": 9366
+                        },
+                        "loc": {
+                            "start": {
+                                "line": 329,
+                                "column": 0
+                            },
+                            "end": {
+                                "line": 334,
+                                "column": 3
+                            }
+                        },
+                        "extendedRange": [
+                            9198,
+                            9367
+                        ]
+                    },
+                    "tags": {
+                        "description": "Parse an array of comments, if it has any, and returns an array of all tags found.",
+                        "tags": [
+                            {
+                                "title": "param",
+                                "description": null,
+                                "lineNumber": 1,
+                                "range": [
+                                    83,
+                                    115
+                                ],
+                                "type": {
+                                    "type": "GENERIC",
+                                    "range": [
+                                        91,
+                                        105
+                                    ],
+                                    "subject": {
+                                        "type": "NAME",
+                                        "name": "Array"
+                                    },
+                                    "objects": [
+                                        {
+                                            "type": "NAME",
+                                            "name": "Comment"
+                                        }
+                                    ],
+                                    "meta": {
+                                        "syntax": "ANGLE_BRACKET"
+                                    }
+                                },
+                                "name": "comments"
+                            },
+                            {
+                                "title": "return",
+                                "description": null,
+                                "lineNumber": 2,
+                                "range": [
+                                    116,
+                                    146
+                                ],
+                                "type": {
+                                    "type": "NULLABLE",
+                                    "range": [
+                                        125,
+                                        145
+                                    ],
+                                    "value": {
+                                        "type": "GENERIC",
+                                        "subject": {
+                                            "type": "NAME",
+                                            "name": "Array"
+                                        },
+                                        "objects": [
+                                            {
+                                                "type": "NAME",
+                                                "name": "CommentBlock"
+                                            }
+                                        ],
+                                        "meta": {
+                                            "syntax": "ANGLE_BRACKET"
+                                        }
+                                    },
+                                    "meta": {
+                                        "syntax": "PREFIX_QUESTION_MARK"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "FunctionDeclaration",
+            "index": 1155,
+            "name": "read_balanced_string",
+            "leading": [
+                {
+                    "comment": {
+                        "type": "Block",
+                        "value": "*\n * @param {string} str\n * @param {number} start\n * @param {string} stop\n * @param {?string} delims\n * @param {number} dir\n * @param {boolean} [stopOnZero]    - Stop when delimiters are balanced\n * @return {?[number, number]}\n ",
+                        "start": 9972,
+                        "end": 10204,
+                        "range": {
+                            "0": 9972,
+                            "1": 10204
+                        },
+                        "loc": {
+                            "start": {
+                                "line": 358,
+                                "column": 0
+                            },
+                            "end": {
+                                "line": 366,
+                                "column": 3
+                            }
+                        },
+                        "extendedRange": [
+                            9970,
+                            10205
+                        ]
+                    },
+                    "tags": {
+                        "description": "",
+                        "tags": [
+                            {
+                                "title": "param",
+                                "description": null,
+                                "lineNumber": 0,
+                                "range": [
+                                    0,
+                                    19
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "string",
+                                    "range": [
+                                        8,
+                                        14
+                                    ]
+                                },
+                                "name": "str"
+                            },
+                            {
+                                "title": "param",
+                                "description": null,
+                                "lineNumber": 1,
+                                "range": [
+                                    20,
+                                    41
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "number",
+                                    "range": [
+                                        28,
+                                        34
+                                    ]
+                                },
+                                "name": "start"
+                            },
+                            {
+                                "title": "param",
+                                "description": null,
+                                "lineNumber": 2,
+                                "range": [
+                                    42,
+                                    62
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "string",
+                                    "range": [
+                                        50,
+                                        56
+                                    ]
+                                },
+                                "name": "stop"
+                            },
+                            {
+                                "title": "param",
+                                "description": null,
+                                "lineNumber": 3,
+                                "range": [
+                                    63,
+                                    86
+                                ],
+                                "type": {
+                                    "type": "NULLABLE",
+                                    "range": [
+                                        71,
+                                        78
+                                    ],
+                                    "value": {
+                                        "type": "NAME",
+                                        "name": "string"
+                                    },
+                                    "meta": {
+                                        "syntax": "PREFIX_QUESTION_MARK"
+                                    }
+                                },
+                                "name": "delims"
+                            },
+                            {
+                                "title": "param",
+                                "description": null,
+                                "lineNumber": 4,
+                                "range": [
+                                    87,
+                                    106
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "number",
+                                    "range": [
+                                        95,
+                                        101
+                                    ]
+                                },
+                                "name": "dir"
+                            },
+                            {
+                                "title": "param",
+                                "description": "Stop when delimiters are balanced",
+                                "lineNumber": 5,
+                                "range": [
+                                    107,
+                                    174
+                                ],
+                                "type": {
+                                    "type": "OPTIONAL",
+                                    "value": {
+                                        "type": "NAME",
+                                        "name": "boolean"
+                                    },
+                                    "meta": {
+                                        "syntax": "SQUARE_BRACKET"
+                                    }
+                                },
+                                "name": "stopOnZero"
+                            },
+                            {
+                                "title": "return",
+                                "description": null,
+                                "lineNumber": 6,
+                                "range": [
+                                    175,
+                                    202
+                                ],
+                                "type": {
+                                    "type": "NULLABLE",
+                                    "range": [
+                                        184,
+                                        201
+                                    ],
+                                    "value": {
+                                        "type": "TUPLE",
+                                        "types": [
+                                            {
+                                                "type": "NAME",
+                                                "name": "number"
+                                            },
+                                            {
+                                                "type": "NAME",
+                                                "name": "number"
+                                            }
+                                        ]
+                                    },
+                                    "meta": {
+                                        "syntax": "PREFIX_QUESTION_MARK"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "FunctionDeclaration",
+            "index": 1365,
+            "name": "read_balanced_delimiters",
+            "leading": [
+                {
+                    "comment": {
+                        "type": "Block",
+                        "value": "*\n * @param {string} str\n * @param {string} stop\n * @param {?string} delims\n * @param {number} dir\n * @return {?[number, number]}\n ",
+                        "start": 11441,
+                        "end": 11576,
+                        "range": {
+                            "0": 11441,
+                            "1": 11576
+                        },
+                        "loc": {
+                            "start": {
+                                "line": 424,
+                                "column": 0
+                            },
+                            "end": {
+                                "line": 430,
+                                "column": 3
+                            }
+                        },
+                        "extendedRange": [
+                            11439,
+                            11577
+                        ]
+                    },
+                    "tags": {
+                        "description": "",
+                        "tags": [
+                            {
+                                "title": "param",
+                                "description": null,
+                                "lineNumber": 0,
+                                "range": [
+                                    0,
+                                    19
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "string",
+                                    "range": [
+                                        8,
+                                        14
+                                    ]
+                                },
+                                "name": "str"
+                            },
+                            {
+                                "title": "param",
+                                "description": null,
+                                "lineNumber": 1,
+                                "range": [
+                                    20,
+                                    40
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "string",
+                                    "range": [
+                                        28,
+                                        34
+                                    ]
+                                },
+                                "name": "stop"
+                            },
+                            {
+                                "title": "param",
+                                "description": null,
+                                "lineNumber": 2,
+                                "range": [
+                                    41,
+                                    64
+                                ],
+                                "type": {
+                                    "type": "NULLABLE",
+                                    "range": [
+                                        49,
+                                        56
+                                    ],
+                                    "value": {
+                                        "type": "NAME",
+                                        "name": "string"
+                                    },
+                                    "meta": {
+                                        "syntax": "PREFIX_QUESTION_MARK"
+                                    }
+                                },
+                                "name": "delims"
+                            },
+                            {
+                                "title": "param",
+                                "description": null,
+                                "lineNumber": 3,
+                                "range": [
+                                    65,
+                                    84
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "number",
+                                    "range": [
+                                        73,
+                                        79
+                                    ]
+                                },
+                                "name": "dir"
+                            },
+                            {
+                                "title": "return",
+                                "description": null,
+                                "lineNumber": 4,
+                                "range": [
+                                    85,
+                                    112
+                                ],
+                                "type": {
+                                    "type": "NULLABLE",
+                                    "range": [
+                                        94,
+                                        111
+                                    ],
+                                    "value": {
+                                        "type": "TUPLE",
+                                        "types": [
+                                            {
+                                                "type": "NAME",
+                                                "name": "number"
+                                            },
+                                            {
+                                                "type": "NAME",
+                                                "name": "number"
+                                            }
+                                        ]
+                                    },
+                                    "meta": {
+                                        "syntax": "PREFIX_QUESTION_MARK"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "FunctionDeclaration",
+            "index": 1442,
+            "name": "get_node_name",
+            "leading": [
+                {
+                    "comment": {
+                        "type": "Block",
+                        "value": "*\n * @param {Node} node\n * @return {?string}\n ",
+                        "start": 11984,
+                        "end": 12034,
+                        "range": {
+                            "0": 11984,
+                            "1": 12034
+                        },
+                        "loc": {
+                            "start": {
+                                "line": 444,
+                                "column": 0
+                            },
+                            "end": {
+                                "line": 447,
+                                "column": 3
+                            }
+                        },
+                        "extendedRange": [
+                            11982,
+                            12035
+                        ]
+                    },
+                    "tags": {
+                        "description": "",
+                        "tags": [
+                            {
+                                "title": "param",
+                                "description": null,
+                                "lineNumber": 0,
+                                "range": [
+                                    0,
+                                    18
+                                ],
+                                "type": {
+                                    "type": "NAME",
+                                    "name": "Node",
+                                    "range": [
+                                        8,
+                                        12
+                                    ]
+                                },
+                                "name": "node"
+                            },
+                            {
+                                "title": "return",
+                                "description": null,
+                                "lineNumber": 1,
+                                "range": [
+                                    19,
+                                    36
+                                ],
+                                "type": {
+                                    "type": "NULLABLE",
+                                    "range": [
+                                        28,
+                                        35
+                                    ],
+                                    "value": {
+                                        "type": "NAME",
+                                        "name": "string"
+                                    },
+                                    "meta": {
+                                        "syntax": "PREFIX_QUESTION_MARK"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "inline": []
+}

@@ -121,7 +121,7 @@ TypeNameExprStrict = name:JsIdentifier {
 
 
 // JSDoc allow to use hyphens in identifier contexts.
-// See https://github.com/Kuniwak/jsdoctypeparser/issues/15
+// See https://github.com/Kuniwak/cli.js/issues/15
 TypeNameExprJsDocFlavored = name:$([a-zA-Z_$][a-zA-Z0-9_$-]*) {
                             return {
                               type: NodeType.NAME,
@@ -131,12 +131,13 @@ TypeNameExprJsDocFlavored = name:$([a-zA-Z_$][a-zA-Z0-9_$-]*) {
 
 
 // TODO: Care escaped strings
-MemberName = "'" name:$([^']*) "'" {
-               return name;
-             }
-           / '"' name:$([^"]*) '"' {
-               return name;
-             }
+//MemberName = "'" name:$([^']*) "'" {
+//               return name;
+//             }
+//           / '"' name:$([^"]*) '"' {
+//               return name;
+//             }
+MemberName = sle:StringLiteralExpr { return sle.raw || sle.name; }
            / JsIdentifier
 
 
@@ -315,16 +316,24 @@ ValueExpr = StringLiteralExpr / NumberLiteralExpr
 
 
 StringLiteralExpr = '"' value:$([^\\"] / "\\".)* '"' {
-                      return {
+                      const r = {
                         type: NodeType.STRING_VALUE,
                         string: value.replace(/\\"/g, '"')
                       };
+
+                      r.raw = '"' + r.string + '"';
+
+                      return r;
                     }
                   / "'" value:$([^\\'] / "\\".)* "'" {
-                      return {
+                      const r = {
                         type: NodeType.STRING_VALUE,
                         string: value.replace(/\\'/g, "'")
                       };
+
+                      r.raw = "'" + r.string + "'";
+
+                      return r;
                     }
 
 
@@ -782,9 +791,7 @@ FunctionTypeExprParamsList = "(" _ modifier:FunctionTypeExprModifier _ "," _ par
 
 
 // We can specify either "this:" or "new:".
-// See https://github.com/google/closure-compiler/blob/
-//       91cf3603d5b0b0dc289ba73adcd0f2741aa90d89/src/
-//       com/google/javascript/jscomp/parsing/JsDocInfoParser.java#L2158-L2171
+// See https://github.com/google/closure-compiler/blob/91cf3603d5b0b0dc289ba73adcd0f2741aa90d89/src/com/google/javascript/jscomp/parsing/JsDocInfoParser.java#L2158-L2171
 FunctionTypeExprModifier = modifierThis:("this" _ ":" _ FunctionTypeExprParamOperand) {
                              return { nodeThis: modifierThis[4], nodeNew: null };
                            }
@@ -824,9 +831,7 @@ FunctionTypeExprReturnableOperand = PrefixUnaryUnionTypeExpr
                                   // "Foo|(function():Returned=)". This result was expected
                                   // by Closure Library.
                                   //
-                                  // See https://github.com/google/closure-library/blob/
-                                  //   47f9c92bb4c7de9a3d46f9921a427402910073fb/
-                                  //   closure/goog/ui/zippy.js#L47
+                                  // See https://github.com/google/closure-library/blob/47f9c92bb4c7de9a3d46f9921a427402910073fb/closure/goog/ui/zippy.js#L47
                                   / RecordTypeExpr
                                   / FunctionTypeExpr
                                   / ParenthesizedExpr

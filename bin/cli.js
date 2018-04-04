@@ -11,7 +11,7 @@ const
     version                = pack.version,
     name                   = pack.name,
     $                      = o => JSON.stringify( o, null, 4 ),
-    $$ = o => inspect( o, { colors: true, depth: 10, showHidden: false } ),
+    $$ = o => inspect( o, { colors: true, depth: 16, showHidden: false } ),
     defaultOptions         = {
         loc:          true,
         range:        true,

@@ -1,0 +1,4165 @@
+[
+    {
+        "comment": "/** ******************************************************************************************************************\n * @file Parse JsDoc comment and add whatever is needed from the attached AST node.\n * @author Julian Jensen <jjdanois@gmail.com>\n * @since 1.0.0\n * @date 25-Mar-2018\n *********************************************************************************************************************/",
+        "meta": {
+            "filename": "parse-file.js",
+            "lineno": 1,
+            "columnno": 0,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {}
+        },
+        "description": "Parse JsDoc comment and add whatever is needed from the attached AST node.",
+        "name": "parse-file.js",
+        "kind": "file",
+        "preserveName": true,
+        "author": [
+            "Julian Jensen <jjdanois@gmail.com>"
+        ],
+        "since": "1.0.0",
+        "tags": [
+            {
+                "originalTitle": "date",
+                "title": "date",
+                "text": "25-Mar-2018",
+                "value": "25-Mar-2018"
+            }
+        ],
+        "longname": "parse-file.js",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                433,
+                440
+            ],
+            "filename": "parse-file.js",
+            "lineno": 10,
+            "columnno": 6,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000007",
+                "name": "inspect",
+                "type": "Identifier",
+                "value": "inspect"
+            }
+        },
+        "undocumented": true,
+        "name": "inspect",
+        "longname": "inspect",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                498,
+                563
+            ],
+            "filename": "parse-file.js",
+            "lineno": 11,
+            "columnno": 4,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000012",
+                "name": "doctrine",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "doctrine",
+        "longname": "doctrine",
+        "kind": "constant",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                571,
+                577
+            ],
+            "filename": "parse-file.js",
+            "lineno": 12,
+            "columnno": 6,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000019",
+                "name": "Syntax",
+                "type": "Identifier",
+                "value": "Syntax"
+            }
+        },
+        "undocumented": true,
+        "name": "Syntax",
+        "longname": "Syntax",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                579,
+                592
+            ],
+            "filename": "parse-file.js",
+            "lineno": 12,
+            "columnno": 14,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000021",
+                "name": "parse",
+                "type": "Identifier",
+                "value": "parser"
+            }
+        },
+        "undocumented": true,
+        "name": "parse",
+        "longname": "parse",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                640,
+                657
+            ],
+            "filename": "parse-file.js",
+            "lineno": 13,
+            "columnno": 6,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000028",
+                "name": "parse",
+                "type": "Identifier",
+                "value": "tag_parser"
+            }
+        },
+        "undocumented": true,
+        "name": "parse",
+        "longname": "parse",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                712,
+                720
+            ],
+            "filename": "parse-file.js",
+            "lineno": 14,
+            "columnno": 6,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000035",
+                "name": "traverse",
+                "type": "Identifier",
+                "value": "traverse"
+            }
+        },
+        "undocumented": true,
+        "name": "traverse",
+        "longname": "traverse",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                722,
+                736
+            ],
+            "filename": "parse-file.js",
+            "lineno": 14,
+            "columnno": 16,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000037",
+                "name": "attachComments",
+                "type": "Identifier",
+                "value": "attachComments"
+            }
+        },
+        "undocumented": true,
+        "name": "attachComments",
+        "longname": "attachComments",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                738,
+                749
+            ],
+            "filename": "parse-file.js",
+            "lineno": 14,
+            "columnno": 32,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000039",
+                "name": "VisitorKeys",
+                "type": "Identifier",
+                "value": "VisitorKeys"
+            }
+        },
+        "undocumented": true,
+        "name": "VisitorKeys",
+        "longname": "VisitorKeys",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                783,
+                851
+            ],
+            "filename": "parse-file.js",
+            "lineno": 15,
+            "columnno": 4,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000044",
+                "name": "NodeType",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "NodeType",
+        "longname": "NodeType",
+        "kind": "constant",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                859,
+                878
+            ],
+            "filename": "parse-file.js",
+            "lineno": 16,
+            "columnno": 6,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000051",
+                "name": "get_container_flags",
+                "type": "Identifier",
+                "value": "get_container_flags"
+            }
+        },
+        "undocumented": true,
+        "name": "get_container_flags",
+        "longname": "get_container_flags",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                927,
+                992
+            ],
+            "filename": "parse-file.js",
+            "lineno": 17,
+            "columnno": 4,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000056",
+                "name": "Scopes",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "Scopes",
+        "longname": "Scopes",
+        "kind": "constant",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                998,
+                1085
+            ],
+            "filename": "parse-file.js",
+            "lineno": 18,
+            "columnno": 4,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000061",
+                "name": "typesRx",
+                "type": "Literal",
+                "value": "<RegExp /(@[a-zA-Z_$][a-zA-Z0-9_$]+\\s+)({[^\\n]+})/g>"
+            }
+        },
+        "undocumented": true,
+        "name": "typesRx",
+        "longname": "typesRx",
+        "kind": "constant",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1091,
+                1167
+            ],
+            "filename": "parse-file.js",
+            "lineno": 19,
+            "columnno": 4,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000064",
+                "name": "notTypeRx",
+                "type": "Literal",
+                "value": "<RegExp /[^|{}<>[\\]&!] | [^^|{}<>[\\]&!]/>"
+            }
+        },
+        "undocumented": true,
+        "name": "notTypeRx",
+        "longname": "notTypeRx",
+        "kind": "constant",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1173,
+                1226
+            ],
+            "filename": "parse-file.js",
+            "lineno": 20,
+            "columnno": 4,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000067",
+                "name": "table",
+                "type": "NewExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "table",
+        "longname": "table",
+        "kind": "constant",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1233,
+                1246
+            ],
+            "filename": "parse-file.js",
+            "lineno": 22,
+            "columnno": 4,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000072",
+                "name": "exprIndex",
+                "type": "Literal",
+                "value": 1
+            }
+        },
+        "undocumented": true,
+        "name": "exprIndex",
+        "longname": "exprIndex",
+        "kind": "member",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1252,
+                1255
+            ],
+            "filename": "parse-file.js",
+            "lineno": 23,
+            "columnno": 4,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000075",
+                "name": "tmp"
+            }
+        },
+        "undocumented": true,
+        "name": "tmp",
+        "longname": "tmp",
+        "kind": "member",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1261,
+                1266
+            ],
+            "filename": "parse-file.js",
+            "lineno": 24,
+            "columnno": 4,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000077",
+                "name": "other"
+            }
+        },
+        "undocumented": true,
+        "name": "other",
+        "longname": "other",
+        "kind": "member",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @typedef {object} CommentBlock\n * @property {Comment} comment\n * @property {Annotation} tags\n */",
+        "meta": {
+            "filename": "parse-file.js",
+            "lineno": 30,
+            "columnno": 0,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "CommentBlock",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "Comment"
+                    ]
+                },
+                "name": "comment"
+            },
+            {
+                "type": {
+                    "names": [
+                        "Annotation"
+                    ]
+                },
+                "name": "tags"
+            }
+        ],
+        "longname": "CommentBlock",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @typedef {object} Comments\n * @property {number} index\n * @property {string} type\n * @property {Array<CommentBlock>} [leading]\n * @property {Array<CommentBlock>} [trailing]\n */",
+        "meta": {
+            "filename": "parse-file.js",
+            "lineno": 36,
+            "columnno": 0,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "Comments",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "number"
+                    ]
+                },
+                "name": "index"
+            },
+            {
+                "type": {
+                    "names": [
+                        "string"
+                    ]
+                },
+                "name": "type"
+            },
+            {
+                "type": {
+                    "names": [
+                        "Array.<CommentBlock>"
+                    ]
+                },
+                "optional": true,
+                "name": "leading"
+            },
+            {
+                "type": {
+                    "names": [
+                        "Array.<CommentBlock>"
+                    ]
+                },
+                "optional": true,
+                "name": "trailing"
+            }
+        ],
+        "longname": "Comments",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @param {string} source       - The source module\n * @param {object} [_options]    - The usual espree/esprima options\n * @return {Program}\n */",
+        "meta": {
+            "range": [
+                1921,
+                2716
+            ],
+            "filename": "parse-file.js",
+            "lineno": 49,
+            "columnno": 0,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000079",
+                "name": "parse",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "source",
+                    "_options"
+                ]
+            },
+            "vars": {
+                "defaultParserOptions": "parse~defaultParserOptions",
+                "options": "parse~options",
+                "options.range": "parse~options.range",
+                "options.loc": "parse~options.loc",
+                "options.comment": "parse~options.range.comment",
+                "options.tokens": "parse~options.loc.tokens",
+                "options.ecmaVersion": "parse~options.ecmaVersion",
+                "options.ecmaFeatures": "parse~options.ecmaFeatures",
+                "options.ecmaFeatures.experimentalObjectRestSpread": "parse~options.ecmaFeatures.experimentalObjectRestSpread",
+                "ast": "parse~ast"
+            }
+        },
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "string"
+                    ]
+                },
+                "description": "The source module",
+                "name": "source"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "optional": true,
+                "description": "The usual espree/esprima options",
+                "name": "_options"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Program"
+                    ]
+                }
+            }
+        ],
+        "name": "parse",
+        "longname": "parse",
+        "kind": "function",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1973,
+                2301
+            ],
+            "filename": "parse-file.js",
+            "lineno": 51,
+            "columnno": 10,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000087",
+                "name": "defaultParserOptions",
+                "type": "ObjectExpression",
+                "value": "{\"loc\":true,\"range\":true,\"comment\":true,\"tokens\":true,\"ecmaVersion\":9,\"sourceType\":\"module\",\"ecmaFeatures\":\"\"}"
+            }
+        },
+        "undocumented": true,
+        "name": "defaultParserOptions",
+        "longname": "parse~defaultParserOptions",
+        "kind": "constant",
+        "memberof": "parse",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2006,
+                2024
+            ],
+            "filename": "parse-file.js",
+            "lineno": 52,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000090",
+                "name": "loc",
+                "type": "Literal",
+                "value": true
+            }
+        },
+        "undocumented": true,
+        "name": "loc",
+        "longname": "parse~defaultParserOptions.loc",
+        "kind": "member",
+        "memberof": "parse~defaultParserOptions",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2034,
+                2052
+            ],
+            "filename": "parse-file.js",
+            "lineno": 53,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000092",
+                "name": "range",
+                "type": "Literal",
+                "value": true
+            }
+        },
+        "undocumented": true,
+        "name": "range",
+        "longname": "parse~defaultParserOptions.range",
+        "kind": "member",
+        "memberof": "parse~defaultParserOptions",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2062,
+                2080
+            ],
+            "filename": "parse-file.js",
+            "lineno": 54,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000094",
+                "name": "comment",
+                "type": "Literal",
+                "value": true
+            }
+        },
+        "undocumented": true,
+        "name": "comment",
+        "longname": "parse~defaultParserOptions.comment",
+        "kind": "member",
+        "memberof": "parse~defaultParserOptions",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2090,
+                2108
+            ],
+            "filename": "parse-file.js",
+            "lineno": 55,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000096",
+                "name": "tokens",
+                "type": "Literal",
+                "value": true
+            }
+        },
+        "undocumented": true,
+        "name": "tokens",
+        "longname": "parse~defaultParserOptions.tokens",
+        "kind": "member",
+        "memberof": "parse~defaultParserOptions",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2118,
+                2133
+            ],
+            "filename": "parse-file.js",
+            "lineno": 56,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000098",
+                "name": "ecmaVersion",
+                "type": "Literal",
+                "value": 9
+            }
+        },
+        "undocumented": true,
+        "name": "ecmaVersion",
+        "longname": "parse~defaultParserOptions.ecmaVersion",
+        "kind": "member",
+        "memberof": "parse~defaultParserOptions",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2143,
+                2165
+            ],
+            "filename": "parse-file.js",
+            "lineno": 57,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000100",
+                "name": "sourceType",
+                "type": "Literal",
+                "value": "module"
+            }
+        },
+        "undocumented": true,
+        "name": "sourceType",
+        "longname": "parse~defaultParserOptions.sourceType",
+        "kind": "member",
+        "memberof": "parse~defaultParserOptions",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2175,
+                2295
+            ],
+            "filename": "parse-file.js",
+            "lineno": 58,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000102",
+                "name": "ecmaFeatures",
+                "type": "ObjectExpression",
+                "value": "{\"impliedStrict\":true,\"experimentalObjectRestSpread\":true}"
+            }
+        },
+        "undocumented": true,
+        "name": "ecmaFeatures",
+        "longname": "parse~defaultParserOptions.ecmaFeatures",
+        "kind": "member",
+        "memberof": "parse~defaultParserOptions",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2203,
+                2237
+            ],
+            "filename": "parse-file.js",
+            "lineno": 59,
+            "columnno": 12,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000104",
+                "name": "impliedStrict",
+                "type": "Literal",
+                "value": true
+            }
+        },
+        "undocumented": true,
+        "name": "impliedStrict",
+        "longname": "parse~defaultParserOptions.ecmaFeatures.impliedStrict",
+        "kind": "member",
+        "memberof": "parse~defaultParserOptions.ecmaFeatures",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2251,
+                2285
+            ],
+            "filename": "parse-file.js",
+            "lineno": 60,
+            "columnno": 12,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000106",
+                "name": "experimentalObjectRestSpread",
+                "type": "Literal",
+                "value": true
+            }
+        },
+        "undocumented": true,
+        "name": "experimentalObjectRestSpread",
+        "longname": "parse~defaultParserOptions.ecmaFeatures.experimentalObjectRestSpread",
+        "kind": "member",
+        "memberof": "parse~defaultParserOptions.ecmaFeatures",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2314,
+                2375
+            ],
+            "filename": "parse-file.js",
+            "lineno": 64,
+            "columnno": 10,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000109",
+                "name": "options",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "options",
+        "longname": "parse~options",
+        "kind": "constant",
+        "memberof": "parse",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2382,
+                2451
+            ],
+            "filename": "parse-file.js",
+            "lineno": 66,
+            "columnno": 4,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000119",
+                "name": "options.range",
+                "type": "AssignmentExpression",
+                "funcscope": "parse",
+                "value": "options.loc",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "range",
+        "longname": "parse~options.range",
+        "kind": "member",
+        "memberof": "parse~options",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2398,
+                2451
+            ],
+            "filename": "parse-file.js",
+            "lineno": 66,
+            "columnno": 20,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000123",
+                "name": "options.loc",
+                "type": "AssignmentExpression",
+                "funcscope": "parse",
+                "value": "options.comment",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "loc",
+        "longname": "parse~options.loc",
+        "kind": "member",
+        "memberof": "parse~options",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2412,
+                2451
+            ],
+            "filename": "parse-file.js",
+            "lineno": 66,
+            "columnno": 34,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000127",
+                "name": "options.comment",
+                "type": "AssignmentExpression",
+                "funcscope": "parse",
+                "value": "options.tokens",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "comment",
+        "longname": "parse~options.range.comment",
+        "kind": "member",
+        "memberof": "parse~options.range",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2430,
+                2451
+            ],
+            "filename": "parse-file.js",
+            "lineno": 66,
+            "columnno": 52,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000131",
+                "name": "options.tokens",
+                "type": "Literal",
+                "funcscope": "parse",
+                "value": true,
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "tokens",
+        "longname": "parse~options.loc.tokens",
+        "kind": "member",
+        "memberof": "parse~options.loc",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2457,
+                2483
+            ],
+            "filename": "parse-file.js",
+            "lineno": 67,
+            "columnno": 4,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000137",
+                "name": "options.ecmaVersion",
+                "type": "Literal",
+                "funcscope": "parse",
+                "value": 2018,
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "ecmaVersion",
+        "longname": "parse~options.ecmaVersion",
+        "kind": "member",
+        "memberof": "parse~options",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2489,
+                2538
+            ],
+            "filename": "parse-file.js",
+            "lineno": 68,
+            "columnno": 4,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000143",
+                "name": "options.ecmaFeatures",
+                "type": "LogicalExpression",
+                "funcscope": "parse",
+                "value": "",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "ecmaFeatures",
+        "longname": "parse~options.ecmaFeatures",
+        "kind": "member",
+        "memberof": "parse~options",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2544,
+                2600
+            ],
+            "filename": "parse-file.js",
+            "lineno": 69,
+            "columnno": 4,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000153",
+                "name": "options.ecmaFeatures.experimentalObjectRestSpread",
+                "type": "Literal",
+                "funcscope": "parse",
+                "value": true,
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "ecmaFeatures.experimentalObjectRestSpread",
+        "longname": "parse~options.ecmaFeatures.experimentalObjectRestSpread",
+        "kind": "member",
+        "memberof": "parse~options",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2621,
+                2652
+            ],
+            "filename": "parse-file.js",
+            "lineno": 72,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000161",
+                "name": "ast",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "ast",
+        "longname": "parse~ast",
+        "kind": "constant",
+        "memberof": "parse",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @param {Program} withComments\n * @param {string} file\n * @return {object}\n */",
+        "meta": {
+            "range": [
+                2803,
+                4511
+            ],
+            "filename": "parse-file.js",
+            "lineno": 82,
+            "columnno": 0,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000177",
+                "name": "prep",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "withComments",
+                    "file"
+                ]
+            },
+            "vars": {
+                "types": "prep~types",
+                "allNodesParsed": "prep~allNodesParsed",
+                "byIndex": "prep~byIndex",
+                "scopes": "prep~scopes",
+                "withComments.fileName": "withComments.fileName",
+                "": null,
+                "r": "prep~r"
+            }
+        },
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "Program"
+                    ]
+                },
+                "name": "withComments"
+            },
+            {
+                "type": {
+                    "names": [
+                        "string"
+                    ]
+                },
+                "name": "file"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                }
+            }
+        ],
+        "name": "prep",
+        "longname": "prep",
+        "kind": "function",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2859,
+                2885
+            ],
+            "filename": "parse-file.js",
+            "lineno": 85,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000183",
+                "name": "types",
+                "type": "NewExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "types",
+        "longname": "prep~types",
+        "kind": "constant",
+        "memberof": "prep",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2895,
+                2914
+            ],
+            "filename": "parse-file.js",
+            "lineno": 86,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000187",
+                "name": "allNodesParsed",
+                "type": "ArrayExpression",
+                "value": "[]"
+            }
+        },
+        "undocumented": true,
+        "name": "allNodesParsed",
+        "longname": "prep~allNodesParsed",
+        "kind": "constant",
+        "memberof": "prep",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2924,
+                2943
+            ],
+            "filename": "parse-file.js",
+            "lineno": 87,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000190",
+                "name": "byIndex",
+                "type": "ArrayExpression",
+                "value": "[]"
+            }
+        },
+        "undocumented": true,
+        "name": "byIndex",
+        "longname": "prep~byIndex",
+        "kind": "constant",
+        "memberof": "prep",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2953,
+                2996
+            ],
+            "filename": "parse-file.js",
+            "lineno": 88,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000193",
+                "name": "scopes",
+                "type": "NewExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "scopes",
+        "longname": "prep~scopes",
+        "kind": "constant",
+        "memberof": "prep",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3003,
+                3031
+            ],
+            "filename": "parse-file.js",
+            "lineno": 90,
+            "columnno": 4,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000199",
+                "name": "withComments.fileName",
+                "type": "Identifier",
+                "value": "file",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "fileName",
+        "longname": "withComments.fileName",
+        "kind": "member",
+        "memberof": "withComments",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3072,
+                4143
+            ],
+            "filename": "parse-file.js",
+            "lineno": 93,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000209",
+                "name": "enter",
+                "type": "FunctionExpression"
+            },
+            "vars": {
+                "node.index": "node.index",
+                "node.containerFlags": "node.containerFlags",
+                "scope": "enter~scope",
+                "p": "enter~p",
+                "": null,
+                "comments": "enter~comments"
+            }
+        },
+        "undocumented": true,
+        "name": "enter",
+        "longname": "enter",
+        "kind": "function",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3157,
+                3174
+            ],
+            "filename": "parse-file.js",
+            "lineno": 95,
+            "columnno": 53,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000222",
+                "name": "enumerable",
+                "type": "Literal",
+                "value": false
+            }
+        },
+        "undocumented": true,
+        "name": "enumerable",
+        "longname": "enumerable",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3176,
+                3189
+            ],
+            "filename": "parse-file.js",
+            "lineno": 95,
+            "columnno": 72,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000224",
+                "name": "value",
+                "type": "Identifier",
+                "value": "parent"
+            }
+        },
+        "undocumented": true,
+        "name": "value",
+        "longname": "value",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3208,
+                3235
+            ],
+            "filename": "parse-file.js",
+            "lineno": 97,
+            "columnno": 12,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000227",
+                "name": "node.index",
+                "type": "MemberExpression",
+                "value": "byIndex.length",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "index",
+        "longname": "node.index",
+        "kind": "member",
+        "memberof": "node",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3249,
+                3298
+            ],
+            "filename": "parse-file.js",
+            "lineno": 98,
+            "columnno": 12,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000235",
+                "name": "node.containerFlags",
+                "type": "CallExpression",
+                "value": "",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "containerFlags",
+        "longname": "node.containerFlags",
+        "kind": "member",
+        "memberof": "node",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3317,
+                3349
+            ],
+            "filename": "parse-file.js",
+            "lineno": 100,
+            "columnno": 16,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000243",
+                "name": "scope",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "scope",
+        "longname": "enter~scope",
+        "kind": "member",
+        "memberof": "enter",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3367,
+                3386
+            ],
+            "filename": "parse-file.js",
+            "lineno": 101,
+            "columnno": 16,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000250",
+                "name": "p",
+                "type": "MemberExpression",
+                "value": "node.parent"
+            }
+        },
+        "undocumented": true,
+        "name": "p",
+        "longname": "enter~p",
+        "kind": "member",
+        "memberof": "enter",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3453,
+                3482
+            ],
+            "filename": "parse-file.js",
+            "lineno": 105,
+            "columnno": 16,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000262",
+                "name": "scope",
+                "type": "CallExpression",
+                "funcscope": "enter",
+                "value": "",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "scope",
+        "longname": "enter~scope",
+        "kind": "member",
+        "memberof": "enter",
+        "scope": "inner"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3500,
+                3512
+            ],
+            "filename": "parse-file.js",
+            "lineno": 106,
+            "columnno": 16,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000270",
+                "name": "p",
+                "type": "MemberExpression",
+                "funcscope": "enter",
+                "value": "p.parent",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "p",
+        "longname": "enter~p",
+        "kind": "member",
+        "memberof": "enter",
+        "scope": "inner"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3581,
+                3598
+            ],
+            "filename": "parse-file.js",
+            "lineno": 109,
+            "columnno": 52,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000283",
+                "name": "enumerable",
+                "type": "Literal",
+                "value": false
+            }
+        },
+        "undocumented": true,
+        "name": "enumerable",
+        "longname": "enumerable",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3600,
+                3612
+            ],
+            "filename": "parse-file.js",
+            "lineno": 109,
+            "columnno": 71,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000285",
+                "name": "value",
+                "type": "Identifier",
+                "value": "scope"
+            }
+        },
+        "undocumented": true,
+        "name": "value",
+        "longname": "value",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3782,
+                3815
+            ],
+            "filename": "parse-file.js",
+            "lineno": 116,
+            "columnno": 18,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000307",
+                "name": "comments",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "comments",
+        "longname": "enter~comments",
+        "kind": "constant",
+        "memberof": "enter",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4259,
+                4412
+            ],
+            "filename": "parse-file.js",
+            "lineno": 134,
+            "columnno": 10,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000322",
+                "name": "r",
+                "type": "ObjectExpression",
+                "value": "{\"fileName\":\"\",\"types\":\"\",\"allDocNodes\":\"\",\"inline\":\"\"}"
+            }
+        },
+        "undocumented": true,
+        "name": "r",
+        "longname": "prep~r",
+        "kind": "constant",
+        "memberof": "prep",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4273,
+                4290
+            ],
+            "filename": "parse-file.js",
+            "lineno": 135,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000325",
+                "name": "fileName",
+                "type": "Identifier",
+                "value": "file"
+            }
+        },
+        "undocumented": true,
+        "name": "fileName",
+        "longname": "prep~r.fileName",
+        "kind": "member",
+        "memberof": "prep~r",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4300,
+                4325
+            ],
+            "filename": "parse-file.js",
+            "lineno": 136,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000327",
+                "name": "types",
+                "type": "ArrayExpression",
+                "value": "[\"\"]"
+            }
+        },
+        "undocumented": true,
+        "name": "types",
+        "longname": "prep~r.types",
+        "kind": "member",
+        "memberof": "prep~r",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4335,
+                4362
+            ],
+            "filename": "parse-file.js",
+            "lineno": 137,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000331",
+                "name": "allDocNodes",
+                "type": "Identifier",
+                "value": "allNodesParsed"
+            }
+        },
+        "undocumented": true,
+        "name": "allDocNodes",
+        "longname": "prep~r.allDocNodes",
+        "kind": "member",
+        "memberof": "prep~r",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4372,
+                4406
+            ],
+            "filename": "parse-file.js",
+            "lineno": 138,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000333",
+                "name": "inline",
+                "type": "ArrayExpression",
+                "value": "[\"\"]"
+            }
+        },
+        "undocumented": true,
+        "name": "inline",
+        "longname": "prep~r.inline",
+        "kind": "member",
+        "memberof": "prep~r",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4457,
+                4474
+            ],
+            "filename": "parse-file.js",
+            "lineno": 141,
+            "columnno": 42,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000348",
+                "name": "enumerable",
+                "type": "Literal",
+                "value": false
+            }
+        },
+        "undocumented": true,
+        "name": "enumerable",
+        "longname": "enumerable",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4476,
+                4489
+            ],
+            "filename": "parse-file.js",
+            "lineno": 141,
+            "columnno": 61,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000350",
+                "name": "value",
+                "type": "Identifier",
+                "value": "scopes"
+            }
+        },
+        "undocumented": true,
+        "name": "value",
+        "longname": "value",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @param {Node & Object} node\n * @param parent\n * @return {*[]}\n */",
+        "meta": {
+            "range": [
+                4586,
+                5078
+            ],
+            "filename": "parse-file.js",
+            "lineno": 151,
+            "columnno": 0,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000354",
+                "name": "determine_field",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "node",
+                    "parent"
+                ]
+            },
+            "vars": {
+                "key": "determine_field~key",
+                "pv": "determine_field~pv",
+                "i": "determine_field~i"
+            }
+        },
+        "params": [
+            {
+                "name": "node"
+            },
+            {
+                "name": "parent"
+            }
+        ],
+        "returns": [
+            {}
+        ],
+        "name": "determine_field",
+        "longname": "determine_field",
+        "kind": "function",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4688,
+                4691
+            ],
+            "filename": "parse-file.js",
+            "lineno": 155,
+            "columnno": 16,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000368",
+                "name": "key"
+            }
+        },
+        "undocumented": true,
+        "name": "key",
+        "longname": "determine_field~key",
+        "kind": "constant",
+        "memberof": "determine_field",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4744,
+                4762
+            ],
+            "filename": "parse-file.js",
+            "lineno": 157,
+            "columnno": 14,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000377",
+                "name": "pv",
+                "type": "MemberExpression",
+                "value": "parent[undefined]"
+            }
+        },
+        "undocumented": true,
+        "name": "pv",
+        "longname": "determine_field~pv",
+        "kind": "constant",
+        "memberof": "determine_field",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4945,
+                4967
+            ],
+            "filename": "parse-file.js",
+            "lineno": 167,
+            "columnno": 18,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000404",
+                "name": "i",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "i",
+        "longname": "determine_field~i",
+        "kind": "constant",
+        "memberof": "determine_field",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "/**\n * Takes a block comment, cleans it up, and returns the output from `doctrine`.\n *\n * @param {string} str\n * @return {{description, tags}}\n */",
+        "meta": {
+            "range": [
+                5228,
+                6759
+            ],
+            "filename": "parse-file.js",
+            "lineno": 184,
+            "columnno": 0,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000424",
+                "name": "prep_string",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "str"
+                ]
+            },
+            "vars": {
+                "strs": "prep_string~strs",
+                "str": "prep_string~str",
+                "": null,
+                "parsed": "prep_string~parsed"
+            }
+        },
+        "description": "Takes a block comment, cleans it up, and returns the output from `doctrine`.",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "string"
+                    ]
+                },
+                "name": "str"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Object"
+                    ]
+                }
+            }
+        ],
+        "name": "prep_string",
+        "longname": "prep_string",
+        "kind": "function",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                5266,
+                5459
+            ],
+            "filename": "parse-file.js",
+            "lineno": 186,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000429",
+                "name": "strs",
+                "type": "ConditionalExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "strs",
+        "longname": "prep_string~strs",
+        "kind": "member",
+        "memberof": "prep_string",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                5466,
+                5594
+            ],
+            "filename": "parse-file.js",
+            "lineno": 190,
+            "columnno": 4,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000461",
+                "name": "str",
+                "type": "CallExpression",
+                "funcscope": "prep_string",
+                "value": "",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "str",
+        "longname": "prep_string~str",
+        "kind": "member",
+        "memberof": "prep_string",
+        "scope": "inner"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                5607,
+                5692
+            ],
+            "filename": "parse-file.js",
+            "lineno": 192,
+            "columnno": 10,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000486",
+                "name": "parsed",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "parsed",
+        "longname": "prep_string~parsed",
+        "kind": "constant",
+        "memberof": "prep_string",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                5639,
+                5656
+            ],
+            "filename": "parse-file.js",
+            "lineno": 192,
+            "columnno": 42,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000494",
+                "name": "recoverable",
+                "type": "Literal",
+                "value": true
+            }
+        },
+        "undocumented": true,
+        "name": "recoverable",
+        "longname": "recoverable",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                5658,
+                5675
+            ],
+            "filename": "parse-file.js",
+            "lineno": 192,
+            "columnno": 61,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000496",
+                "name": "lineNumbers",
+                "type": "Literal",
+                "value": true
+            }
+        },
+        "undocumented": true,
+        "name": "lineNumbers",
+        "longname": "lineNumbers",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                5677,
+                5688
+            ],
+            "filename": "parse-file.js",
+            "lineno": 192,
+            "columnno": 80,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000498",
+                "name": "range",
+                "type": "Literal",
+                "value": true
+            }
+        },
+        "undocumented": true,
+        "name": "range",
+        "longname": "range",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6004,
+                6035
+            ],
+            "filename": "parse-file.js",
+            "lineno": 201,
+            "columnno": 26,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000554",
+                "name": "pp",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "pp",
+        "longname": "<anonymous>~pp",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6375,
+                6417
+            ],
+            "filename": "parse-file.js",
+            "lineno": 209,
+            "columnno": 22,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000622",
+                "name": "pp",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "pp",
+        "longname": "<anonymous>~pp",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6540,
+                6703
+            ],
+            "filename": "parse-file.js",
+            "lineno": 212,
+            "columnno": 16,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000657",
+                "name": "tag.type",
+                "type": "ObjectExpression",
+                "value": "{\"type\":\"\",\"value\":\"\",\"meta\":\"\"}",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "type",
+        "longname": "tag.type",
+        "kind": "member",
+        "memberof": "tag",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6573,
+                6597
+            ],
+            "filename": "parse-file.js",
+            "lineno": 213,
+            "columnno": 20,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000662",
+                "name": "type",
+                "type": "MemberExpression",
+                "value": "NodeType.OPTIONAL"
+            }
+        },
+        "undocumented": true,
+        "name": "type",
+        "longname": "tag.type.type",
+        "kind": "member",
+        "memberof": "tag.type",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6619,
+                6628
+            ],
+            "filename": "parse-file.js",
+            "lineno": 214,
+            "columnno": 20,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000666",
+                "name": "value",
+                "type": "Identifier",
+                "value": "pp"
+            }
+        },
+        "undocumented": true,
+        "name": "value",
+        "longname": "tag.type.value",
+        "kind": "member",
+        "memberof": "tag.type",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6650,
+                6685
+            ],
+            "filename": "parse-file.js",
+            "lineno": 215,
+            "columnno": 20,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000668",
+                "name": "meta",
+                "type": "ObjectExpression",
+                "value": "{\"syntax\":\"SQUARE_BRACKET\"}"
+            }
+        },
+        "undocumented": true,
+        "name": "meta",
+        "longname": "tag.type.meta",
+        "kind": "member",
+        "memberof": "tag.type",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6659,
+                6683
+            ],
+            "filename": "parse-file.js",
+            "lineno": 215,
+            "columnno": 29,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000670",
+                "name": "syntax",
+                "type": "Literal",
+                "value": "SQUARE_BRACKET"
+            }
+        },
+        "undocumented": true,
+        "name": "syntax",
+        "longname": "tag.type.meta.syntax",
+        "kind": "member",
+        "memberof": "tag.type.meta",
+        "scope": "static"
+    },
+    {
+        "comment": "/**\n * @param {string} str\n * @return {string}\n */",
+        "meta": {
+            "range": [
+                6812,
+                7495
+            ],
+            "filename": "parse-file.js",
+            "lineno": 228,
+            "columnno": 0,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000674",
+                "name": "fix_array",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "str"
+                ]
+            },
+            "vars": {
+                "arr": "fix_array~arr",
+                "typeStr": "fix_array~typeStr",
+                "str": "fix_array~str"
+            }
+        },
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "string"
+                    ]
+                },
+                "name": "str"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "string"
+                    ]
+                }
+            }
+        ],
+        "name": "fix_array",
+        "longname": "fix_array",
+        "kind": "function",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6848,
+                6873
+            ],
+            "filename": "parse-file.js",
+            "lineno": 230,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000679",
+                "name": "arr",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "arr",
+        "longname": "fix_array~arr",
+        "kind": "member",
+        "memberof": "fix_array",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6921,
+                6984
+            ],
+            "filename": "parse-file.js",
+            "lineno": 234,
+            "columnno": 14,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000693",
+                "name": "typeStr",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "typeStr",
+        "longname": "fix_array~typeStr",
+        "kind": "constant",
+        "memberof": "fix_array",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                7032,
+                7095
+            ],
+            "filename": "parse-file.js",
+            "lineno": 237,
+            "columnno": 12,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000711",
+                "name": "str",
+                "type": "BinaryExpression",
+                "funcscope": "fix_array",
+                "value": "",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "str",
+        "longname": "fix_array~str",
+        "kind": "member",
+        "memberof": "fix_array",
+        "scope": "inner"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                7179,
+                7255
+            ],
+            "filename": "parse-file.js",
+            "lineno": 241,
+            "columnno": 12,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000739",
+                "name": "str",
+                "type": "BinaryExpression",
+                "funcscope": "fix_array",
+                "value": "",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "str",
+        "longname": "fix_array~str",
+        "kind": "member",
+        "memberof": "fix_array",
+        "scope": "inner"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                7302,
+                7423
+            ],
+            "filename": "parse-file.js",
+            "lineno": 245,
+            "columnno": 12,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000764",
+                "name": "str",
+                "type": "BinaryExpression",
+                "funcscope": "fix_array",
+                "value": "",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "str",
+        "longname": "fix_array~str",
+        "kind": "member",
+        "memberof": "fix_array",
+        "scope": "inner"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                7444,
+                7469
+            ],
+            "filename": "parse-file.js",
+            "lineno": 248,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000799",
+                "name": "arr",
+                "type": "CallExpression",
+                "funcscope": "fix_array",
+                "value": "",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "arr",
+        "longname": "fix_array~arr",
+        "kind": "member",
+        "memberof": "fix_array",
+        "scope": "inner"
+    },
+    {
+        "comment": "/**\n * Parse all leading and trailing comments for a given node, if it has any and returns an array\n * of all tags found.\n *\n * @param {BaseNode} node\n * @return {?Comments}\n */",
+        "meta": {
+            "range": [
+                7675,
+                8318
+            ],
+            "filename": "parse-file.js",
+            "lineno": 261,
+            "columnno": 0,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000808",
+                "name": "parse_comments",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "node"
+                ]
+            },
+            "vars": {
+                "lc": "parse_comments~lc",
+                "tc": "parse_comments~tc",
+                "cb": "parse_comments~cb",
+                "cb.kind": "parse_comments~cb.kind",
+                "cb.leading": "parse_comments~cb.leading",
+                "cb.trailing": "parse_comments~cb.trailing"
+            }
+        },
+        "description": "Parse all leading and trailing comments for a given node, if it has any and returns an array\nof all tags found.",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "BaseNode"
+                    ]
+                },
+                "name": "node"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Comments"
+                    ]
+                },
+                "nullable": true
+            }
+        ],
+        "name": "parse_comments",
+        "longname": "parse_comments",
+        "kind": "function",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                7860,
+                7908
+            ],
+            "filename": "parse-file.js",
+            "lineno": 266,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000813",
+                "name": "lc",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "lc",
+        "longname": "parse_comments~lc",
+        "kind": "constant",
+        "memberof": "parse_comments",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                7947,
+                7996
+            ],
+            "filename": "parse-file.js",
+            "lineno": 268,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000820",
+                "name": "tc",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "tc",
+        "longname": "parse_comments~tc",
+        "kind": "constant",
+        "memberof": "parse_comments",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "/** @type {Comments} */",
+        "meta": {
+            "range": [
+                8038,
+                8156
+            ],
+            "filename": "parse-file.js",
+            "lineno": 270,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000827",
+                "name": "cb",
+                "type": "ObjectExpression",
+                "value": "{\"type\":\"\",\"index\":\"\",\"name\":\"\"}"
+            }
+        },
+        "type": {
+            "names": [
+                "Comments"
+            ]
+        },
+        "name": "cb",
+        "longname": "parse_comments~cb",
+        "kind": "constant",
+        "memberof": "parse_comments",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                8057,
+                8073
+            ],
+            "filename": "parse-file.js",
+            "lineno": 271,
+            "columnno": 12,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000830",
+                "name": "type",
+                "type": "MemberExpression",
+                "value": "node.type"
+            }
+        },
+        "undocumented": true,
+        "name": "type",
+        "longname": "parse_comments~cb.type",
+        "kind": "member",
+        "memberof": "parse_comments~cb",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                8087,
+                8104
+            ],
+            "filename": "parse-file.js",
+            "lineno": 272,
+            "columnno": 12,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000834",
+                "name": "index",
+                "type": "MemberExpression",
+                "value": "node.index"
+            }
+        },
+        "undocumented": true,
+        "name": "index",
+        "longname": "parse_comments~cb.index",
+        "kind": "member",
+        "memberof": "parse_comments~cb",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                8118,
+                8146
+            ],
+            "filename": "parse-file.js",
+            "lineno": 273,
+            "columnno": 12,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000838",
+                "name": "name",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "name",
+        "longname": "parse_comments~cb.name",
+        "kind": "member",
+        "memberof": "parse_comments~cb",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                8180,
+                8199
+            ],
+            "filename": "parse-file.js",
+            "lineno": 276,
+            "columnno": 21,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000847",
+                "name": "cb.kind",
+                "type": "MemberExpression",
+                "funcscope": "parse_comments",
+                "value": "node.kind",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "kind",
+        "longname": "parse_comments~cb.kind",
+        "kind": "member",
+        "memberof": "parse_comments~cb",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                8252,
+                8267
+            ],
+            "filename": "parse-file.js",
+            "lineno": 280,
+            "columnno": 14,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000865",
+                "name": "cb.leading",
+                "type": "Identifier",
+                "funcscope": "parse_comments",
+                "value": "lc",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "leading",
+        "longname": "parse_comments~cb.leading",
+        "kind": "member",
+        "memberof": "parse_comments~cb",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                8283,
+                8299
+            ],
+            "filename": "parse-file.js",
+            "lineno": 281,
+            "columnno": 14,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000873",
+                "name": "cb.trailing",
+                "type": "Identifier",
+                "funcscope": "parse_comments",
+                "value": "tc",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "trailing",
+        "longname": "parse_comments~cb.trailing",
+        "kind": "member",
+        "memberof": "parse_comments~cb",
+        "scope": "static"
+    },
+    {
+        "comment": "/**\n * @param {string} str\n * @return {string}\n */",
+        "meta": {
+            "range": [
+                8371,
+                9198
+            ],
+            "filename": "parse-file.js",
+            "lineno": 290,
+            "columnno": 0,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000880",
+                "name": "replace_types",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "str"
+                ]
+            },
+            "vars": {
+                "parts": "replace_types~parts",
+                "i": "replace_types~i",
+                "part": "replace_types~part",
+                "indexLength": "replace_types~indexLength",
+                "typeLength": "replace_types~typeLength",
+                "rlng": "replace_types~rlng",
+                "tmpName": "replace_types~tmpName",
+                "pp": "replace_types~pp",
+                "parts[undefined]": "replace_types~parts.undefined]"
+            }
+        },
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "string"
+                    ]
+                },
+                "name": "str"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "string"
+                    ]
+                }
+            }
+        ],
+        "name": "replace_types",
+        "longname": "replace_types",
+        "kind": "function",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                8421,
+                8449
+            ],
+            "filename": "parse-file.js",
+            "lineno": 293,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000885",
+                "name": "parts",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "parts",
+        "longname": "replace_types~parts",
+        "kind": "constant",
+        "memberof": "replace_types",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                8460,
+                8465
+            ],
+            "filename": "parse-file.js",
+            "lineno": 295,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000893",
+                "name": "i",
+                "type": "Literal",
+                "value": 0
+            }
+        },
+        "undocumented": true,
+        "name": "i",
+        "longname": "replace_types~i",
+        "kind": "member",
+        "memberof": "replace_types",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                8484,
+                8488
+            ],
+            "filename": "parse-file.js",
+            "lineno": 297,
+            "columnno": 16,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000898",
+                "name": "part"
+            }
+        },
+        "undocumented": true,
+        "name": "part",
+        "longname": "replace_types~part",
+        "kind": "constant",
+        "memberof": "replace_types",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                8587,
+                8622
+            ],
+            "filename": "parse-file.js",
+            "lineno": 302,
+            "columnno": 16,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000910",
+                "name": "indexLength",
+                "type": "MemberExpression",
+                "value": ".length"
+            }
+        },
+        "undocumented": true,
+        "name": "indexLength",
+        "longname": "replace_types~indexLength",
+        "kind": "constant",
+        "memberof": "replace_types",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                8640,
+                8669
+            ],
+            "filename": "parse-file.js",
+            "lineno": 303,
+            "columnno": 16,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000918",
+                "name": "typeLength",
+                "type": "BinaryExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "typeLength",
+        "longname": "replace_types~typeLength",
+        "kind": "constant",
+        "memberof": "replace_types",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                8687,
+                8760
+            ],
+            "filename": "parse-file.js",
+            "lineno": 304,
+            "columnno": 16,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000925",
+                "name": "rlng",
+                "type": "ConditionalExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "rlng",
+        "longname": "replace_types~rlng",
+        "kind": "constant",
+        "memberof": "replace_types",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                8778,
+                8824
+            ],
+            "filename": "parse-file.js",
+            "lineno": 305,
+            "columnno": 16,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000937",
+                "name": "tmpName",
+                "type": "BinaryExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "tmpName",
+        "longname": "replace_types~tmpName",
+        "kind": "constant",
+        "memberof": "replace_types",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                8843,
+                8845
+            ],
+            "filename": "parse-file.js",
+            "lineno": 307,
+            "columnno": 16,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000948",
+                "name": "pp"
+            }
+        },
+        "undocumented": true,
+        "name": "pp",
+        "longname": "replace_types~pp",
+        "kind": "member",
+        "memberof": "replace_types",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                8894,
+                8949
+            ],
+            "filename": "parse-file.js",
+            "lineno": 311,
+            "columnno": 16,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000953",
+                "name": "pp",
+                "type": "CallExpression",
+                "funcscope": "replace_types",
+                "value": "",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "pp",
+        "longname": "replace_types~pp",
+        "kind": "member",
+        "memberof": "replace_types",
+        "scope": "inner"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                9021,
+                9030
+            ],
+            "filename": "parse-file.js",
+            "lineno": 315,
+            "columnno": 16,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000969",
+                "name": "pp",
+                "type": "Literal",
+                "funcscope": "replace_types",
+                "value": null,
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "pp",
+        "longname": "replace_types~pp",
+        "kind": "member",
+        "memberof": "replace_types",
+        "scope": "inner"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                9108,
+                9135
+            ],
+            "filename": "parse-file.js",
+            "lineno": 320,
+            "columnno": 12,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000982",
+                "name": "parts[undefined]",
+                "type": "TemplateLiteral",
+                "funcscope": "replace_types",
+                "value": "",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "undefined]",
+        "longname": "replace_types~parts.undefined]",
+        "kind": "member",
+        "memberof": "replace_types~parts",
+        "scope": "static"
+    },
+    {
+        "comment": "/**\n * Parse an array of comments, if it has any, and returns an array of all tags found.\n *\n * @param {Array<Comment>} comments\n * @return {?Array<CommentBlock>}\n */",
+        "meta": {
+            "range": [
+                9367,
+                9705
+            ],
+            "filename": "parse-file.js",
+            "lineno": 335,
+            "columnno": 0,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100000999",
+                "name": "parse_comment_array",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "comments"
+                ]
+            },
+            "vars": {
+                "r": "parse_comment_array~r",
+                "": null
+            }
+        },
+        "description": "Parse an array of comments, if it has any, and returns an array of all tags found.",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "Array.<Comment>"
+                    ]
+                },
+                "name": "comments"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Array.<CommentBlock>"
+                    ]
+                },
+                "nullable": true
+            }
+        ],
+        "name": "parse_comment_array",
+        "longname": "parse_comment_array",
+        "kind": "function",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                9475,
+                9668
+            ],
+            "filename": "parse-file.js",
+            "lineno": 339,
+            "columnno": 10,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001014",
+                "name": "r",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "r",
+        "longname": "parse_comment_array~r",
+        "kind": "constant",
+        "memberof": "parse_comment_array",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                9554,
+                9564
+            ],
+            "filename": "parse-file.js",
+            "lineno": 341,
+            "columnno": 23,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001035",
+                "name": "comment",
+                "type": "Identifier",
+                "value": "c"
+            }
+        },
+        "undocumented": true,
+        "name": "comment",
+        "longname": "comment",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                9566,
+                9594
+            ],
+            "filename": "parse-file.js",
+            "lineno": 341,
+            "columnno": 35,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001037",
+                "name": "tags",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "tags",
+        "longname": "tags",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                9717,
+                9812
+            ],
+            "filename": "parse-file.js",
+            "lineno": 349,
+            "columnno": 4,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001067",
+                "name": "delimOpposites",
+                "type": "ObjectExpression",
+                "value": "{\"undefined\":\">\"}"
+            }
+        },
+        "undocumented": true,
+        "name": "delimOpposites",
+        "longname": "delimOpposites",
+        "kind": "constant",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                9744,
+                9752
+            ],
+            "filename": "parse-file.js",
+            "lineno": 350,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001070",
+                "name": "\"(\"",
+                "type": "Literal",
+                "value": ")"
+            }
+        },
+        "undocumented": true,
+        "name": "\"(\"",
+        "longname": "delimOpposites.\"(\"",
+        "kind": "member",
+        "memberof": "delimOpposites",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                9762,
+                9770
+            ],
+            "filename": "parse-file.js",
+            "lineno": 351,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001072",
+                "name": "\"{\"",
+                "type": "Literal",
+                "value": "}"
+            }
+        },
+        "undocumented": true,
+        "name": "\"{\"",
+        "longname": "delimOpposites.\"{\"",
+        "kind": "member",
+        "memberof": "delimOpposites",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                9780,
+                9788
+            ],
+            "filename": "parse-file.js",
+            "lineno": 352,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001074",
+                "name": "\"[\"",
+                "type": "Literal",
+                "value": "]"
+            }
+        },
+        "undocumented": true,
+        "name": "\"[\"",
+        "longname": "delimOpposites.\"[\"",
+        "kind": "member",
+        "memberof": "delimOpposites",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                9798,
+                9806
+            ],
+            "filename": "parse-file.js",
+            "lineno": 353,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001076",
+                "name": "\"<\"",
+                "type": "Literal",
+                "value": ">"
+            }
+        },
+        "undocumented": true,
+        "name": "\"<\"",
+        "longname": "delimOpposites.\"<\"",
+        "kind": "member",
+        "memberof": "delimOpposites",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                9818,
+                9906
+            ],
+            "filename": "parse-file.js",
+            "lineno": 355,
+            "columnno": 4,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001078",
+                "name": "oppositeString",
+                "type": "ArrowFunctionExpression"
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "undocumented": true,
+        "name": "oppositeString",
+        "longname": "oppositeString",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                9912,
+                9969
+            ],
+            "filename": "parse-file.js",
+            "lineno": 356,
+            "columnno": 4,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001099",
+                "name": "allDelimiters",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "allDelimiters",
+        "longname": "allDelimiters",
+        "kind": "constant",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @param {string} str\n * @param {number} start\n * @param {string} stop\n * @param {?string} delims\n * @param {number} dir\n * @param {boolean} [stopOnZero]    - Stop when delimiters are balanced\n * @return {?[number, number]}\n */",
+        "meta": {
+            "range": [
+                10205,
+                11439
+            ],
+            "filename": "parse-file.js",
+            "lineno": 367,
+            "columnno": 0,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001110",
+                "name": "read_balanced_string",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "str",
+                    "start",
+                    "stop",
+                    "delims",
+                    "dir",
+                    "stopOnZero"
+                ]
+            },
+            "vars": {
+                "zero": "read_balanced_string~zero",
+                "": null,
+                "opps": "read_balanced_string~opps",
+                "stop": "read_balanced_string~stop",
+                "i": "read_balanced_string~i",
+                "c": "read_balanced_string~c",
+                "nestCounts": "read_balanced_string~nestCounts",
+                "j": "read_balanced_string~j",
+                "nestCounts[undefined]": "read_balanced_string~nestCounts.undefined]",
+                "index": "read_balanced_string~index"
+            }
+        },
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "string"
+                    ]
+                },
+                "name": "str"
+            },
+            {
+                "type": {
+                    "names": [
+                        "number"
+                    ]
+                },
+                "name": "start",
+                "defaultvalue": 0
+            },
+            {
+                "type": {
+                    "names": [
+                        "string"
+                    ]
+                },
+                "name": "stop",
+                "defaultvalue": ","
+            },
+            {
+                "type": {
+                    "names": [
+                        "string"
+                    ]
+                },
+                "nullable": true,
+                "name": "delims"
+            },
+            {
+                "type": {
+                    "names": [
+                        "number"
+                    ]
+                },
+                "name": "dir",
+                "defaultvalue": 1
+            },
+            {
+                "type": {
+                    "names": [
+                        "boolean"
+                    ]
+                },
+                "optional": true,
+                "description": "Stop when delimiters are balanced",
+                "name": "stopOnZero"
+            }
+        ],
+        "returns": [
+            {}
+        ],
+        "name": "read_balanced_string",
+        "longname": "read_balanced_string",
+        "kind": "function",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                10364,
+                10403
+            ],
+            "filename": "parse-file.js",
+            "lineno": 370,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001128",
+                "name": "zero",
+                "type": "ArrowFunctionExpression"
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "undocumented": true,
+        "name": "zero",
+        "longname": "read_balanced_string~zero",
+        "kind": "function",
+        "memberof": "read_balanced_string",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                10414,
+                10445
+            ],
+            "filename": "parse-file.js",
+            "lineno": 372,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001142",
+                "name": "opps",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "opps",
+        "longname": "read_balanced_string~opps",
+        "kind": "member",
+        "memberof": "read_balanced_string",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                10526,
+                10538
+            ],
+            "filename": "parse-file.js",
+            "lineno": 377,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001159",
+                "name": "stop",
+                "type": "Identifier",
+                "funcscope": "read_balanced_string",
+                "value": "opps",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "stop",
+        "longname": "read_balanced_string~stop",
+        "kind": "member",
+        "memberof": "read_balanced_string",
+        "scope": "inner"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                10569,
+                10583
+            ],
+            "filename": "parse-file.js",
+            "lineno": 381,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001164",
+                "name": "stop",
+                "type": "Identifier",
+                "funcscope": "read_balanced_string",
+                "value": "delims",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "stop",
+        "longname": "read_balanced_string~stop",
+        "kind": "member",
+        "memberof": "read_balanced_string",
+        "scope": "inner"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                10600,
+                10618
+            ],
+            "filename": "parse-file.js",
+            "lineno": 384,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001168",
+                "name": "i",
+                "type": "Identifier",
+                "value": "start"
+            }
+        },
+        "undocumented": true,
+        "name": "i",
+        "longname": "read_balanced_string~i",
+        "kind": "member",
+        "memberof": "read_balanced_string",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                10628,
+                10649
+            ],
+            "filename": "parse-file.js",
+            "lineno": 385,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001171",
+                "name": "c",
+                "type": "MemberExpression",
+                "value": "str[undefined]"
+            }
+        },
+        "undocumented": true,
+        "name": "c",
+        "longname": "read_balanced_string~c",
+        "kind": "member",
+        "memberof": "read_balanced_string",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                10659,
+                10674
+            ],
+            "filename": "parse-file.js",
+            "lineno": 386,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001176",
+                "name": "nestCounts",
+                "type": "ArrayExpression",
+                "value": "[]"
+            }
+        },
+        "undocumented": true,
+        "name": "nestCounts",
+        "longname": "read_balanced_string~nestCounts",
+        "kind": "member",
+        "memberof": "read_balanced_string",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                10691,
+                10696
+            ],
+            "filename": "parse-file.js",
+            "lineno": 388,
+            "columnno": 14,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001181",
+                "name": "j",
+                "type": "Literal",
+                "value": 0
+            }
+        },
+        "undocumented": true,
+        "name": "j",
+        "longname": "read_balanced_string~j",
+        "kind": "member",
+        "memberof": "read_balanced_string",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                10737,
+                10756
+            ],
+            "filename": "parse-file.js",
+            "lineno": 390,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001193",
+                "name": "nestCounts[undefined]",
+                "type": "Literal",
+                "funcscope": "read_balanced_string",
+                "value": 0,
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "undefined]",
+        "longname": "read_balanced_string~nestCounts.undefined]",
+        "kind": "member",
+        "memberof": "read_balanced_string~nestCounts",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                10886,
+                10913
+            ],
+            "filename": "parse-file.js",
+            "lineno": 397,
+            "columnno": 12,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001221",
+                "name": "index",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "index",
+        "longname": "read_balanced_string~index",
+        "kind": "member",
+        "memberof": "read_balanced_string",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                11019,
+                11044
+            ],
+            "filename": "parse-file.js",
+            "lineno": 403,
+            "columnno": 20,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001241",
+                "name": "index",
+                "type": "CallExpression",
+                "funcscope": "read_balanced_string",
+                "value": "",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "index",
+        "longname": "read_balanced_string~index",
+        "kind": "member",
+        "memberof": "read_balanced_string",
+        "scope": "inner"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                11175,
+                11183
+            ],
+            "filename": "parse-file.js",
+            "lineno": 409,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001264",
+                "name": "i",
+                "type": "Identifier",
+                "funcscope": "read_balanced_string",
+                "value": "dir",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "i",
+        "longname": "read_balanced_string~i",
+        "kind": "member",
+        "memberof": "read_balanced_string",
+        "scope": "inner"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                11193,
+                11205
+            ],
+            "filename": "parse-file.js",
+            "lineno": 410,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001268",
+                "name": "c",
+                "type": "MemberExpression",
+                "funcscope": "read_balanced_string",
+                "value": "str[undefined]",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "c",
+        "longname": "read_balanced_string~c",
+        "kind": "member",
+        "memberof": "read_balanced_string",
+        "scope": "inner"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                11303,
+                11311
+            ],
+            "filename": "parse-file.js",
+            "lineno": 417,
+            "columnno": 8,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001288",
+                "name": "i",
+                "type": "Identifier",
+                "funcscope": "read_balanced_string",
+                "value": "dir",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "i",
+        "longname": "read_balanced_string~i",
+        "kind": "member",
+        "memberof": "read_balanced_string",
+        "scope": "inner"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                11369,
+                11377
+            ],
+            "filename": "parse-file.js",
+            "lineno": 418,
+            "columnno": 56,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001304",
+                "name": "i",
+                "type": "Identifier",
+                "funcscope": "read_balanced_string",
+                "value": "dir",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "i",
+        "longname": "read_balanced_string~i",
+        "kind": "member",
+        "memberof": "read_balanced_string",
+        "scope": "inner"
+    },
+    {
+        "comment": "/**\n * @param {string} str\n * @param {string} stop\n * @param {?string} delims\n * @param {number} dir\n * @return {?[number, number]}\n */",
+        "meta": {
+            "range": [
+                11577,
+                11982
+            ],
+            "filename": "parse-file.js",
+            "lineno": 431,
+            "columnno": 0,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001318",
+                "name": "read_balanced_delimiters",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "str",
+                    "stop",
+                    "delims",
+                    "dir"
+                ]
+            },
+            "vars": {
+                "m": "read_balanced_delimiters~m",
+                "se": "read_balanced_delimiters~se"
+            }
+        },
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "string"
+                    ]
+                },
+                "name": "str"
+            },
+            {
+                "type": {
+                    "names": [
+                        "string"
+                    ]
+                },
+                "name": "stop",
+                "defaultvalue": ","
+            },
+            {
+                "type": {
+                    "names": [
+                        "string"
+                    ]
+                },
+                "nullable": true,
+                "name": "delims"
+            },
+            {
+                "type": {
+                    "names": [
+                        "number"
+                    ]
+                },
+                "name": "dir",
+                "defaultvalue": 1
+            }
+        ],
+        "returns": [
+            {}
+        ],
+        "name": "read_balanced_delimiters",
+        "longname": "read_balanced_delimiters",
+        "kind": "function",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                11675,
+                11799
+            ],
+            "filename": "parse-file.js",
+            "lineno": 433,
+            "columnno": 10,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001332",
+                "name": "m",
+                "type": "ConditionalExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "m",
+        "longname": "read_balanced_delimiters~m",
+        "kind": "constant",
+        "memberof": "read_balanced_delimiters",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                11840,
+                11912
+            ],
+            "filename": "parse-file.js",
+            "lineno": 437,
+            "columnno": 10,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001366",
+                "name": "se",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "se",
+        "longname": "read_balanced_delimiters~se",
+        "kind": "constant",
+        "memberof": "read_balanced_delimiters",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @param {Node} node\n * @return {?string}\n */",
+        "meta": {
+            "range": [
+                12035,
+                14927
+            ],
+            "filename": "parse-file.js",
+            "lineno": 448,
+            "columnno": 0,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001395",
+                "name": "get_node_name",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "node"
+                ]
+            }
+        },
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "Node"
+                    ]
+                },
+                "name": "node"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "string"
+                    ]
+                },
+                "nullable": true
+            }
+        ],
+        "name": "get_node_name",
+        "longname": "get_node_name",
+        "kind": "function",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                14929,
+                14961
+            ],
+            "filename": "parse-file.js",
+            "lineno": 534,
+            "columnno": 0,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001763",
+                "name": "module.exports",
+                "type": "ObjectExpression",
+                "value": "{\"prep\":\"\",\"parse\":\"\"}",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "exports",
+        "longname": "module.exports",
+        "kind": "member",
+        "memberof": "module",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                14948,
+                14952
+            ],
+            "filename": "parse-file.js",
+            "lineno": 534,
+            "columnno": 19,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001768",
+                "name": "prep",
+                "type": "Identifier",
+                "value": "prep"
+            }
+        },
+        "undocumented": true,
+        "name": "prep",
+        "longname": "module.exports.prep",
+        "kind": "member",
+        "memberof": "module.exports",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                14954,
+                14959
+            ],
+            "filename": "parse-file.js",
+            "lineno": 534,
+            "columnno": 25,
+            "path": "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib",
+            "code": {
+                "id": "astnode100001770",
+                "name": "parse",
+                "type": "Identifier",
+                "value": "parse"
+            }
+        },
+        "undocumented": true,
+        "name": "parse",
+        "longname": "module.exports.parse",
+        "kind": "member",
+        "memberof": "module.exports",
+        "scope": "static"
+    },
+    {
+        "kind": "package",
+        "longname": "package:undefined",
+        "files": [
+            "/mnt/d/Users/Julian/code/public/jsdoc-tag-parser/lib/parse-file.js"
+        ]
+    }
+]

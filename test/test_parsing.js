@@ -1384,6 +1384,7 @@ function createStringValueNode(stringLiteral) {
   return {
     type: NodeType.STRING_VALUE,
     string: stringLiteral,
+    raw: '"' + stringLiteral + '"'
   };
 }
 

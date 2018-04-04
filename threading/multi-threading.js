@@ -5,8 +5,10 @@
  * @copyright Planet3, Inc.
  *******************************************************************************************************/
 "use strict";
-
 /* eslint-env browser */
+
+let id = 0,
+    qwId = 0;
 
 /**
  * QueryableWorker instances methods:
@@ -33,7 +35,8 @@ function QueryableWorker( worker, defaultListener = () => {}, onError = null )
         instance  = this,
         listeners = {};
 
-    console.log( "query worker thing running..." );
+    worker.postMessage( { id: `qw${++qwId}` } );
+    console.log( `query worker running...` );
     this.defaultListener = defaultListener;
 
     if ( onError ) worker.onerror = onError;
@@ -44,7 +47,7 @@ function QueryableWorker( worker, defaultListener = () => {}, onError = null )
     this.removeListener = name => delete listeners[ name ];
 
     this.sendQuery = ( queryMethod, ...queryMethodArguments ) => {
-        console.log( `sending query ${queryMethod}( ${queryMethodArguments.join( ', ' )}` );
+        console.log( `sending query ${queryMethod}( ${queryMethodArguments.join( ', ' )} )` );
         if ( !queryMethod )
             throw new TypeError( 'QueryableWorker.sendQuery takes at least one argument' );
 
@@ -127,7 +130,12 @@ const
             pool       = [],
             semaphore  = Semaphore( max ),
             use_worker = async fn => {
-                const worker = pool.pop() || new Worker( path );
+                const
+                    sendId = !pool.length,
+                    worker = pool.pop() || new Worker( path );
+
+                if ( sendId )
+                    worker.postMessage( { id: ++id } );
 
                 let result;
 
@@ -177,13 +185,12 @@ const
     slow    = async() => {
         await wait( 1200 );
         return ++taeller;
-    },
-    qw      = new QueryableWorker( new Worker( 'workers.js' ), ( ...args ) => console.log( "response:", args ) );
+    };
 
 const lowSlow = limit( 2, slow );
 
-console.log( "adding 8 function calls" );
-for ( let n = 0; n < 8; ++n )
+console.log( "adding 16 function calls" );
+for ( let n = 0; n < 16; ++n )
     lowSlow().then( cnt => console.log( 'cnt:', cnt ) );
 console.log( "added..." );
 
@@ -191,5 +198,6 @@ const multi = Cluster( 'workers.js' );
 for ( let n = 0; n < 16; ++n )
     multi( { message: 'delay' } ).then( cnt => console.log( 'cnt:', cnt ) );
 
+const qw      = new QueryableWorker( new Worker( 'workers.js' ), ( ...args ) => console.log( "response:", args ) );
 qw.addListener( 'doAlert', ( ...args ) => console.log( 'doAlert called:', args ) );
 qw.sendQuery( 'waitSomeTime' );

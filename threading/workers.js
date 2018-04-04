@@ -6,7 +6,7 @@
 "use strict";
 /* eslint-env worker */
 
-console.log( "worker thing" );
+let id = '<none>';
 
 const
     defaultOnMessage = self.onmessage,
@@ -49,11 +49,11 @@ function defaultReply( data )
             break;
 
         case 'delay':
-            workers.sys.defer( () => self.postMessage( 'Weee...' ) );
+            workers.sys.defer( () => self.postMessage( `defer done ${id}` ) );
             break;
 
         default:
-            self.postMessage( `Unknown message: "${message}"` );
+            self.postMessage( `Unknown message (${id}): "${data.message}"` );
             break;
     }
 }
@@ -65,7 +65,7 @@ function defaultReply( data )
 function reply( message, ...values )
 {
     if ( !message )
-        throw new TypeError( 'reply - not enough arguments' );
+        throw new TypeError( `reply - not enough arguments (${id})` );
 
     self.postMessage( { queryMethodListener: message, queryMethodArguments: values } );
 }
@@ -74,11 +74,19 @@ function reply( message, ...values )
     console.log( "in async loop" );
     while ( true )
     {
+        console.log( `Waiting for data (${id})...` );
+
         const
             data                                  = await once(),
             { queryMethod, queryMethodArguments } = data;
 
-        console.log( "received data:", data );
+        console.log( `received data (${id}):`, data );
+        if ( data.id )
+        {
+            id = data.id;
+            continue;
+        }
+
         if ( queryMethod && queryMethodArguments && typeof workers[ queryMethod ] === 'function' )
             workers[ queryMethod ].call( workers, reply, ...queryMethodArguments );
         else

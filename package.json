@@ -16,6 +16,7 @@
     "test": "test"
   },
   "main": "index.js",
+  "bin": "bin/cli.s",
   "scripts": {
     "lint": "eslint index.js lib/**/*.js src/**/*.js",
     "check": "npm run lint -s && dependency-check package.json --entry index.js",
@@ -23,7 +24,7 @@
     "test1": "rm -rf node_modules/.cache coverage/ && nyc --reporter=lcov --reporter=text --produce-source-map --require=@std/esm mocha",
     "coveralls": "npm test && nyc report --reporter=text-lcov | coveralls",
     "postcoveralls": "rimraf ./coverage",
-    "prepublish": "npm-run-all build test",
+    "prepublishOnly": "npm-run-all build test",
     "patch": "npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
@@ -52,13 +53,15 @@
     "npm-run-all": "^4.1.2",
     "pegjs": "^0.10.0",
     "rimraf": "^2.6.2",
-    "run-s": "0.0.0"
+    "run-s": "0.0.0",
+    "tsd-jsdoc": "^2.0.0-beta.3"
   },
   "license": "MIT",
   "dependencies": {
+    "commander": "latest",
     "doctrine": "latest",
+    "escope": "^3.6.0",
     "espree": "latest",
-    "estraverse": "latest",
-    "commander": "latest"
+    "estraverse": "latest"
   }
 }

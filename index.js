@@ -7,17 +7,11 @@ const
     NodeType = require( './lib/node-type.js' ),
     SyntaxType = require( './lib/syntax-type.js' );
 
-
-/**
- * Namespace for jsdoctypeparser.
- * @namespace
- * @exports jsdoctypeparser
- */
 module.exports = {
     parse, SyntaxError,
     publish,
     createDefaultPublisher,
     traverse,
     NodeType,
-    SyntaxType,
+    SyntaxType
 };
