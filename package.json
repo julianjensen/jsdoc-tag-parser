@@ -38,7 +38,8 @@
     "clean": "rimraf ./peg_lib",
     "postclean": "mkdirp ./peg_lib",
     "prebuild": "npm-run-all clean",
-    "build": "pegjs --cache -o ./peg_lib/jsdoctype.js ./peg_src/jsdoctype.pegjs"
+    "build": "pegjs --cache -o ./peg_lib/jsdoctype.js ./peg_src/jsdoctype.pegjs",
+    "dev:build": "pegjs --cache --trace -o ./peg_lib/jsdoctype.js ./peg_src/jsdoctype.pegjs"
   },
   "readmeFilename": "README.md",
   "devDependencies": {

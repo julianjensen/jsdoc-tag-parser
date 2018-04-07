@@ -124,7 +124,7 @@ function convert( obj )
             return reserved( { type: 'NameExpression', name: named( obj.owner ) + '#' + named( obj.name, obj.raw ) } );
 
         case 'MEMBER':
-            if ( obj.name && obj.name.includes( '.' ) ) console.log( obj );
+            // if ( obj.name && obj.name.includes( '.' ) ) console.log( obj );
             return reserved( { type: 'NameExpression', name: named( obj.owner ) + '.' + named( obj.name, obj.raw ) } );
         case 'MODULE':
             return { type: 'NameExpression', name: 'module:' + named( obj.value ) };
@@ -240,11 +240,10 @@ function remove_meta( obj )
 
 describe( 'Parser', function() {
     this.timeout( 5000 );
-    it( 'should not throw any errors when parsing tests/fixutures/*', function() {
+    it( 'should not throw any errors when parsing tests/fixtures/*', function() {
         Object.keys( Fixtures ).forEach( function( fixtureName ) {
             Fixtures[ fixtureName ].forEach( function( fixture ) {
                 if ( fixture.skip ) return;
-
                 try
                 {
                     const res = Parser.parse( fixture.typeExprStr );

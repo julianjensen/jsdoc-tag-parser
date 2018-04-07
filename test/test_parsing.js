@@ -15,6 +15,7 @@ var Parser = require('../lib/parsing.js');
 
 
 describe('Parser', function() {
+
   it('should return a type name node when "TypeName" arrived', function() {
     var typeExprStr = 'TypeName';
     var node = Parser.parse(typeExprStr);
@@ -1170,7 +1171,7 @@ describe('Parser', function() {
   });
 
 
-  it('should return a string value type node when \'"\\n\\"\\t"\' arrived', function() {
+  it(`should return a string value type node when '"\\n\\"\\t"' arrived`, function() {
     var typeExprStr = '"\\n\\"\\t"';
     var node = Parser.parse(typeExprStr);
 
