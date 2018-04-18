@@ -364,7 +364,7 @@ NumberLiteralExpr = value:NumericLiteral {
  *   - number|undefined
  *   - Foo|Bar|Baz
  */
-UnionTypeExpr = left:UnionTypeExprOperand _ syntax:UnionTypeOperator _ right:(UnionTypeExpr / UnionTypeExprOperand) {
+UnionTypeExpr = left:UnionTypeExprOperand _ syntax:UnionTypeOperator _ right:(SuffixUnaryUnionTypeExpr / UnionTypeExprOperand) {
                 return {
                     type: NodeType.UNION,
                     left: left,
@@ -382,7 +382,7 @@ UnionTypeExpr = left:UnionTypeExprOperand _ syntax:UnionTypeOperator _ right:(Un
  *   - number&undefined
  *   - Foo&Bar&Baz
  */
-IntersectionTypeExpr = left:IntersectionTypeExprOperand _ "&" _ right:(IntersectionTypeExpr / IntersectionTypeExprOperand) {
+IntersectionTypeExpr = left:IntersectionTypeExprOperand _ "&" _ right:(SuffixUnaryIntersectionTypeExpr / IntersectionTypeExprOperand) {
                 return {
                     type: NodeType.INTERSECTION,
                     left: left,

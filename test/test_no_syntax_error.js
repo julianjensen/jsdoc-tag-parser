@@ -152,7 +152,7 @@ function convert( obj )
             return nullable( convert( obj.value ) );
         case 'VARIADIC':
             if ( !obj.value )
-                return { repeatable: true, type: 'NullLiteral' };
+                return { repeatable: true };
             tmp = convert( obj.value );
             if ( !tmp ) console.error( 'boom:', obj );
             return repeatable( tmp );

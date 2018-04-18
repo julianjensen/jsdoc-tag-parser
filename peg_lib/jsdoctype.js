@@ -1974,7 +1974,7 @@ function peg$parse(input, options) {
         if (s3 !== peg$FAILED) {
           s4 = peg$parse_();
           if (s4 !== peg$FAILED) {
-            s5 = peg$parseUnionTypeExpr();
+            s5 = peg$parseSuffixUnaryUnionTypeExpr();
             if (s5 === peg$FAILED) {
               s5 = peg$parseUnionTypeExprOperand();
             }
@@ -2035,7 +2035,7 @@ function peg$parse(input, options) {
         if (s3 !== peg$FAILED) {
           s4 = peg$parse_();
           if (s4 !== peg$FAILED) {
-            s5 = peg$parseIntersectionTypeExpr();
+            s5 = peg$parseSuffixUnaryIntersectionTypeExpr();
             if (s5 === peg$FAILED) {
               s5 = peg$parseIntersectionTypeExprOperand();
             }
@@ -2268,26 +2268,23 @@ function peg$parse(input, options) {
       return cached.result;
     }
 
-    s0 = peg$parseUnaryUnionTypeExpr();
+    s0 = peg$parseRecordTypeExpr();
     if (s0 === peg$FAILED) {
-      s0 = peg$parseRecordTypeExpr();
+      s0 = peg$parseFunctionTypeExpr();
       if (s0 === peg$FAILED) {
-        s0 = peg$parseFunctionTypeExpr();
+        s0 = peg$parseParenthesizedExpr();
         if (s0 === peg$FAILED) {
-          s0 = peg$parseParenthesizedExpr();
+          s0 = peg$parseGenericTypeExpr();
           if (s0 === peg$FAILED) {
-            s0 = peg$parseGenericTypeExpr();
+            s0 = peg$parseArrayTypeExpr();
             if (s0 === peg$FAILED) {
-              s0 = peg$parseArrayTypeExpr();
+              s0 = peg$parseBroadNamepathExpr();
               if (s0 === peg$FAILED) {
-                s0 = peg$parseBroadNamepathExpr();
+                s0 = peg$parseValueExpr();
                 if (s0 === peg$FAILED) {
-                  s0 = peg$parseValueExpr();
+                  s0 = peg$parseAnyTypeExpr();
                   if (s0 === peg$FAILED) {
-                    s0 = peg$parseAnyTypeExpr();
-                    if (s0 === peg$FAILED) {
-                      s0 = peg$parseUnknownTypeExpr();
-                    }
+                    s0 = peg$parseUnknownTypeExpr();
                   }
                 }
               }
