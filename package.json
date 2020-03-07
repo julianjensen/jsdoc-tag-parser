@@ -62,7 +62,7 @@
     "commander": "latest",
     "doctrine": "latest",
     "escope": "^3.6.0",
-    "espree": "latest",
+    "espree": "6.1.0",
     "estraverse": "latest"
   }
 }
