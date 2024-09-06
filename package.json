@@ -61,8 +61,8 @@
   "dependencies": {
     "commander": "latest",
     "doctrine": "latest",
-    "escope": "^3.6.0",
-    "espree": "latest",
+    "escope": "^4.0.0",
+    "espree": "6.2.1",
     "estraverse": "latest"
   }
 }
